@@ -155,4 +155,8 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/initFlickity.js"></script>
   <script src="js/page5_addTextarea.js"></script>
+  <script src="js/sideBarre.js"></script>
+  <script>
+    sideBarre_change("10%", "30%");
+  </script>
   </html>

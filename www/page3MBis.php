@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page2_3.css">
   <link rel="stylesheet" href="css/style_global.css">
+
+  <!-- JS -->
+  <script>
+    document.getElementById("hiddenBarre").style.height = "70%";
+  </script>
+  <!-- JS -->
 </head>
 <body>
 
@@ -40,7 +46,9 @@
 <script src="js/libs/jquery.js"></script>
 <script src="js/error.js"></script>
 <script src="js/nbVerif.js"></script>
+<script src="js/sideBarre.js"></script>
 <script>
+  sideBarre_change("50%"/*, "70%"*/);
   nb_verif("page4M", "2");
 </script>
 </html>

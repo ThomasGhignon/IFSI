@@ -9,10 +9,15 @@ session_start();
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
   <title>Les 5 M</title>
-
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page3.css">
   <link rel="stylesheet" href="css/style_global.css">
+
+  <!-- JS -->
+  <script>
+    document.getElementById("hiddenBarre").style.height = "90%";
+  </script>
+  <!-- JS -->
 </head>
 <body>
 
@@ -51,4 +56,8 @@ session_start();
 <script src="js/page3MVerif.js"></script>
 <script src="js/error.js"></script>
 <script src="js/unitary_check.js"></script>
+<script src="js/sideBarre.js"></script>
+<script>
+  sideBarre_change("70%"/*, "90%"*/);
+</script>
 </html>

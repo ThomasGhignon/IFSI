@@ -1,7 +1,6 @@
 <?php
 session_start();
 $_SESSION['nameTeam'] = $_GET['valName'];
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,7 +10,6 @@ $_SESSION['nameTeam'] = $_GET['valName'];
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
   <title>Document</title>
-
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page2_3.css">
   <link rel="stylesheet" href="css/style_global.css">
@@ -47,7 +45,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
 <script src="js/nbVerif.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
-  sideBarre_change();
+  sideBarre_change("90%"/*,"100%"*/);
   var verif = nb_verif("page3M", "1");
   if (verif == false)
   {
