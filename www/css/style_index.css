@@ -1,0 +1,24 @@
+.title
+{
+  width: 100%;
+}
+
+.title>div
+{
+  width: 70%;
+  height: 12px;
+
+  background-color: #00A19C;
+}
+
+.main>p
+{
+  margin: 130px 0 45px 0;
+}
+
+.main form
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
