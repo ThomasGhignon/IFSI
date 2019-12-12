@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('module/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,12 +13,6 @@ session_start();
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page3.css">
   <link rel="stylesheet" href="css/style_global.css">
-
-  <!-- JS -->
-  <script>
-    document.getElementById("hiddenBarre").style.height = "90%";
-  </script>
-  <!-- JS -->
 </head>
 <body>
 
@@ -58,6 +53,7 @@ session_start();
 <script src="js/unitary_check.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
-  sideBarre_change("70%"/*, "90%"*/);
+  sideBarre_change("70%");
+  M_verif("<?php echo($ipLocal); ?>");
 </script>
 </html>

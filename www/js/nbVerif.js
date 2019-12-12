@@ -11,6 +11,7 @@ function nb_verif(root, path, code)
       }
       else
       {
+        $('.input').css('border-color','red');
         showError("Le code n'est pas correct", "red");
       }
     });

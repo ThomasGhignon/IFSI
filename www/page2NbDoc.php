@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('module/config.php');
 $_SESSION['nameTeam'] = $_GET['valName'];
 ?>
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
       <form class="main" action="path">
         <div class="content" value="path">
           <p>Entrez le code correspondant au<br>document où vous avez trouvé l'erreur :</p>
-          <input type="text" placeholder="ex : 0000000">
+          <input class="input" type="text" placeholder="ex : 0000000">
         </div>
         <div class="button">
           <input type="submit" value="Envoyer">
@@ -45,7 +46,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
 <script src="js/nbVerif.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
-  sideBarre_change("90%"/*,"100%"*/);
-  var verif = nb_verif("<?php echo($ipLocal); ?>","page3M", "1");
+  sideBarre_change("90%");
+  nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
 </script>
 </html>

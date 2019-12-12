@@ -14,7 +14,7 @@ function start_verif(root, path)
       else
       {
         //redirection
-        //$(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php?valName="+inputData+"");
+        $(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php?valName="+inputData+"");
       }
     });
   });

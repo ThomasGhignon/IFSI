@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('module/config.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -33,7 +37,7 @@
       <form class="main" action="">
         <div class="content">
           <p>Entrez le code correspondant au<br>document où vous avez trouvé l'erreur :</p>
-          <input type="text" placeholder="ex : 0000000">
+          <input class="input" type="text" placeholder="ex : 0000000">
         </div>
         <div class="button">
           <input type="submit" value="Envoyer">
@@ -48,7 +52,7 @@
 <script src="js/nbVerif.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
-  sideBarre_change("50%"/*, "70%"*/);
-  nb_verif("<?php echo($ipLocal); ?>","page4M", "2");
+  sideBarre_change("50%");
+  nb_verif("<?php echo($ipLocal); ?>","page4M", "<?php echo($numPage3); ?>");
 </script>
 </html>

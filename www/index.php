@@ -41,7 +41,6 @@ require_once('module/config.php');
 <script src="js/start.js"></script>
 <script>
   start_verif("<?php echo($ipLocal); ?>","page2NbDoc");
-  console.log("<?php echo($ipLocal); ?>");
 </script>
 </html>
 
