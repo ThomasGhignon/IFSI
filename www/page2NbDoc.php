@@ -46,10 +46,6 @@ $_SESSION['nameTeam'] = $_GET['valName'];
 <script src="js/sideBarre.js"></script>
 <script>
   sideBarre_change("90%"/*,"100%"*/);
-  var verif = nb_verif("page3M", "1");
-  if (verif == false)
-  {
-    console.log("erreur");
-  }
+  var verif = nb_verif("<?php echo($ipLocal); ?>","page3M", "1");
 </script>
 </html>

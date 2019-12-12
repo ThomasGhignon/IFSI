@@ -49,6 +49,6 @@
 <script src="js/sideBarre.js"></script>
 <script>
   sideBarre_change("50%"/*, "70%"*/);
-  nb_verif("page4M", "2");
+  nb_verif("<?php echo($ipLocal); ?>","page4M", "2");
 </script>
 </html>

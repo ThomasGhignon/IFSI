@@ -1,4 +1,4 @@
-function M_verif()
+function M_verif(root)
 {
   $(document).ready(function(){
     $(".main").submit(function(event){
@@ -107,7 +107,7 @@ function M_verif()
       //check si tout les input sont validés
       if (data[0] == true && data[1] == true && data[2] == true && data[3] == true && data[4] == true)
       {
-        $(location).attr('href',"http://localhost/IFSI/www/page3MBis.php");
+        $(location).attr('href',"http://"+root+"/IFSI/www/page3MBis.php");
       }
       else
       {

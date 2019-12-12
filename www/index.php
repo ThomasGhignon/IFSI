@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('module/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -39,7 +40,8 @@ session_start();
 <script src="js/error.js"></script>
 <script src="js/start.js"></script>
 <script>
-  start_verif("page2NbDoc");
+  start_verif("<?php echo($ipLocal); ?>","page2NbDoc");
+  console.log("<?php echo($ipLocal); ?>");
 </script>
 </html>
 

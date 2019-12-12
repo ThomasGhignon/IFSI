@@ -1,4 +1,4 @@
-function nb_verif(path, code)
+function nb_verif(root, path, code)
 {
   $(document).ready(function(){
     $(".main").submit(function(event){
@@ -7,7 +7,7 @@ function nb_verif(path, code)
       if(inputData == code)
       {
         //redirection
-        $(location).attr('href',"http://localhost/IFSI/www/"+path+".php");
+        $(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php");
       }
       else
       {

@@ -1,5 +1,6 @@
-function start_verif(path)
+function start_verif(root, path)
 {
+  console.log(root);
   $(document).ready(function(){
     $(".main").submit(function(event){
       event.preventDefault();
@@ -13,7 +14,7 @@ function start_verif(path)
       else
       {
         //redirection
-        $(location).attr('href',"http://localhost/IFSI/www/"+path+".php?valName="+inputData+"");
+        //$(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php?valName="+inputData+"");
       }
     });
   });
