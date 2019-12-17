@@ -1,0 +1,27 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+input[type=password]
+{
+  margin-bottom: 45px;
+  height: 45px;
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: #363636 2px solid;
+
+  box-sizing: border-box;
+  padding: 15px;
+
+  font-family:"poppinsMedium", sans-serif;
+
+  color: #00A19C;
+  font-size: 15px;
+}

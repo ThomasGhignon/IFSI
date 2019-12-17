@@ -18,6 +18,10 @@ require_once('module/config.php');
 <body>
 
   <header>
+    <div class="connectionAdmin">
+      <img src="img/settings.svg" alt="parametre">
+      <a href="http://localhost/IFSI/www/connectionAdmin.php">Admin</a>
+    </div>
     <div class="wrap">
       <div class="errorMessage_container"></div>
       <div class="title">

@@ -67,6 +67,14 @@ p
   font-size: 20px;
 }
 
+a
+{
+  font-family:"poppinsMedium", sans-serif;
+  color: #FFF;
+  font-size: 15px;
+  text-decoration: none;
+}
+
 input[type=submit]
 {
   font-family:"poppinsMedium", sans-serif;
