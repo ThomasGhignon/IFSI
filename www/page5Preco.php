@@ -124,7 +124,7 @@ require_once('module/init.php');
       </div>
     </div>
     <div class="advancement">
-
+      <span>1 / 2</span>
     </div>
     <div class="legend">
       <span>Validé</span>
