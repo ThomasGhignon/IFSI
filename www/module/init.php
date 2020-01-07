@@ -4,7 +4,7 @@ require_once('config.php');
 
 try
 {
-    $bdd = new PDO('mysql:host='.$ipLocal.';dbname=ifsi', 'root', '');
+    $bdd = new PDO('mysql:host='.$ipLocal.';dbname='.$nameBdd.'', ''.$userBdd.'',''.$passwordBdd.'');
 }
 catch (Exception $e)
 {

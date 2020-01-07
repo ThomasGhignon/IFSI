@@ -1,3 +1,6 @@
+<?php
+require_once('module/config.php');
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,16 +15,40 @@
 </head>
 <body>
   <?php
-    if (isset($_POST['passwordAdmin']) AND $_POST['passwordAdmin'] ==  "1")
-    {
+    /*if (isset($_POST['passwordAdmin']) AND $_POST['passwordAdmin'] ==  $passwordAdmin)
+    {*/
     ?>
+    <section class="leftContainer">
+      <nav>
+        <div>
+          <span>Méthode</span>
+        </div>
+        <div>
+          <span>Matériel</span>
+        </div>
+        <div>
+          <span>Malade</span>
+        </div>
+        <div>
+          <span>Main d'oeuvre</span>
+        </div>
+        <div>
+          <span>Milieu</span>
+        </div>
+      </nav>
+      <div></div>
+    </section>
+    <section class="rightContainer">
 
+    </section>
     <?php
-    }
+    /*}
     else
     {
         echo '<p>Mot de passe incorrect</p>';
-    }
+    }*/
     ?>
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/adminSelectM.js"></script>
 </body>
 </html>

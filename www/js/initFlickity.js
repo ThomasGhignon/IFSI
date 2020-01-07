@@ -13,5 +13,6 @@ var $carousel = $('.main-carousel ').flickity();
 
 $('.button-group').on( 'click', '.button', function() {
   var index = $(this).index();
-  $carousel.flickity( 'select', index );
+  $carousel.flickity( 'select', index);
+  $('.typeM>p').text($(this).text());
 });

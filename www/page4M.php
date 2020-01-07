@@ -132,6 +132,6 @@ require_once('module/config.php');
 <script src="js/unitary_check.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
-  sideBarre_change("30%", "50%");
+  sideBarre_change("30%");
 </script>
 </html>
