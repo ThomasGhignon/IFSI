@@ -31,7 +31,8 @@ require_once('module/init.php');
   <section class="middleContainer">
     <div class="main-carousel">
       <div class="carousel-cell wrapCarousel">
-        <div class="messageContainer" id="methodeMessage">
+        <div class="testOverflow">
+          <div class="messageContainer" id="methodeMessage"></div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="methode">
@@ -42,9 +43,9 @@ require_once('module/init.php');
           </form>
         </div>
       </div>
-
-      <div class="carousel-cell">
-        <div class="messageContainer" id="materielMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div class="testOverflow">
+          <div class="messageContainer" id="materielMessage"></div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="materiel">
@@ -55,9 +56,9 @@ require_once('module/init.php');
           </form>
         </div>
       </div>
-
-      <div class="carousel-cell">
-        <div class="messageContainer" id="maladeMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div class="testOverflow">
+          <div class="messageContainer" id="maladeMessage"></div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="malade">
@@ -68,9 +69,9 @@ require_once('module/init.php');
           </form>
         </div>
       </div>
-
-      <div class="carousel-cell">
-        <div class="messageContainer" id="mainoeuvreMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div class="testOverflow">
+          <div class="messageContainer" id="mainoeuvreMessage"></div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="mainoeuvre">
@@ -81,9 +82,10 @@ require_once('module/init.php');
           </form>
         </div>
       </div>
-
-      <div class="carousel-cell">
-        <div class="messageContainer" id="milieuMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div class="testOverflow">
+          <div class="messageContainer" id="milieuMessage">
+        </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="milieu">

@@ -31,23 +31,28 @@ require_once('module/init.php');
   <section class="middleContainer">
     <div class="main-carousel">
       <div class="carousel-cell wrapCarousel">
-        <div class="messageContainer" id="methodeMessage">
+        <div>
+          <div class="messageContainer" id="methodeMessage"></div>
         </div>
       </div>
-      <div class="carousel-cell">
-        <div class="messageContainer" id="materielMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div>
+          <div class="messageContainer" id="materielMessage"></div>
         </div>
       </div>
-      <div class="carousel-cell">
-        <div class="messageContainer" id="maladeMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div>
+          <div class="messageContainer" id="maladeMessage"></div>
         </div>
       </div>
-      <div class="carousel-cell">
-        <div class="messageContainer" id="mainoeuvreMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div>
+          <div class="messageContainer" id="mainoeuvreMessage"></div>
         </div>
       </div>
-      <div class="carousel-cell">
-        <div class="messageContainer" id="milieuMessage">
+      <div class="carousel-cell wrapCarousel">
+        <div>
+          <div class="messageContainer" id="milieuMessage"></div>
         </div>
       </div>
     </div>
@@ -86,7 +91,6 @@ require_once('module/init.php');
 <!-- js script -->
 
 <script src="js/initFlickity.js"></script>
-<script src="js/page5Send.js"></script>
 <script src="js/loadMessage.js"></script>
 
 <!-- <script src="js/page5_addTextarea.js"></script> -->
@@ -97,3 +101,4 @@ require_once('module/init.php');
   sideBarre_change("10%");
 </script>
 </html>
+

@@ -1,23 +1,3 @@
-/*function loadMessage()
-{
-  $(document).ready(function(){
-    setTimeout( function(){
-        var id = $('.messageContainer div:last').attr('id');
-        $.ajax({
-            url : "module/load.php?id=" + id,
-            type : "GET",
-            success : function(html){
-                $('.messageContainer').append(html);
-            }
-        });
-
-        loadMessage();
-
-    }, 1000);
-  });
-}
-loadMessage();*/
-
 function loadMessage(path, typeOf_m)
 {
     var id = $(''+path+' div:last').attr('id');

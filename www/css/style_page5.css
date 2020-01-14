@@ -173,9 +173,9 @@ body
   padding: 10px 30px;
 
   border-radius: 10px 0px 0px 10px;
--moz-border-radius: 10px 0px 0px 10px;
--webkit-border-radius: 10px 0px 0px 10px;
-border: 0px solid #000000;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  border: 0px solid #000000;
 }
 
 .main-carousel
@@ -186,9 +186,19 @@ border: 0px solid #000000;
 
 .carousel-cell
 {
-
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testOverflow
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow-y: auto;
+  height: 85%;
 }
 
 .wrapCarousel
@@ -201,16 +211,10 @@ border: 0px solid #000000;
 
 .messageContainer
 {
-  height: 90%;
-
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end;
-
-  box-sizing: border-box;
-  padding-bottom: 20px;
-  overflow-y: scroll;
 }
 
 .messageContainer>div
@@ -600,3 +604,4 @@ p
 
   margin-right: 10px;
 }
+
