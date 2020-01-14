@@ -6,7 +6,6 @@ function sendMessage()
 
       var valId = $(this).parents('form').attr('id');
       var message = $('#'+valId+'>textarea').val();
-      console.log(message);
 
       if (message !="")
       {
@@ -17,10 +16,8 @@ function sendMessage()
         });
         $('#'+valId+'>textarea').val('');
       }
-      else{
-        console.log("Erreur : pas de message !!!")
-      }
     });
   });
 }
 sendMessage();
+

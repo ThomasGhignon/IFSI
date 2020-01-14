@@ -70,7 +70,7 @@ function M_verif(root)
           }
         }
       }
-      //si aucun des deux mots de nameM_bis n'est selectionné
+      //si aucun des deux mots de nameM_bis n'est selectionnés
       if (checked2[0] == 0 && checked2[1] == 0)
         {
           //erreur : mot manquant
@@ -104,7 +104,7 @@ function M_verif(root)
           }
         }
       }
-      //check si tout les input sont validés
+      //check si tout les inputs sont validés
       if (data[0] == true && data[1] == true && data[2] == true && data[3] == true && data[4] == true)
       {
         $(location).attr('href',"http://"+root+"/IFSI/www/page3MBis.php");

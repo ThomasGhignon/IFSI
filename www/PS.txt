@@ -1,3 +1,9 @@
 A demander :
 
 Titre de chaque page
+
+A faire :
+
+-message d'erreur pour chaque script.
+-Clear tout les scripts
+-Mettre en place le fichier flickity

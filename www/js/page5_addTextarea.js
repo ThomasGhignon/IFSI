@@ -1,3 +1,4 @@
+/*REMOVE*/
 function addTextarea()
 {
   $(document).ready(function(){

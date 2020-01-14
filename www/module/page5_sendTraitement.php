@@ -1,15 +1,16 @@
 <?php
 require_once('init.php');
 
-if(!empty($_POST['message'])){
+if(!empty($_POST['message']) && ($_POST['valId'] == 'methode' || $_POST['valId'] == 'materiel' || $_POST['valId'] == 'malade' || $_POST['valId'] == 'mainoeuvre' || $_POST['valId'] == 'milieu')){
 
   $message = $_POST['message'];
-  $nameTable = $_POST['valId'];
+  $typeOf_m = $_POST['valId'];
   $stat = 'treatment';
 
-  $insertion = $bdd->prepare('INSERT INTO '.$nameTable.'(status,message) VALUES(:stat, :message)');
+  $insertion = $bdd->prepare('INSERT INTO preco_message(status,type_of_m,message) VALUES(:stat, :typeOf_m, :message)');
   $insertion->execute(array(
       'stat' => $stat,
+      'typeOf_m' => $typeOf_m,
       'message' => $message
   ));
 }
