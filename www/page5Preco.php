@@ -130,14 +130,16 @@ require_once('module/init.php');
 <script src="js/libs/jquery.js"></script>
 <script src="js/libs/flickityMin.js"></script>
 <!-- js libs -->
+<script>
+  var urlPath = document.location.href;
+  var fileName = urlPath.substring(urlPath.lastIndexOf( "/" )+1 );
+</script>
 <!-- js script -->
-
 <script src="js/initFlickity.js"></script>
 <script src="js/page5Send.js"></script>
 <script src="js/loadMessage.js"></script>
-
+<script src="js/reloadMessage_user.js"></script>
 <!-- <script src="js/page5_addTextarea.js"></script> -->
-
 <script src="js/sideBarre.js"></script>
 <!-- js script -->
 <script>

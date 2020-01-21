@@ -10,7 +10,7 @@ require_once('module/init.php');
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Préconisations</title>
+  <title>Préconisations - Administrateur</title>
 
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <!-- <link rel="stylesheet" href="css/style_global.css"> -->
@@ -88,14 +88,15 @@ require_once('module/init.php');
 <script src="js/libs/jquery.js"></script>
 <script src="js/libs/flickityMin.js"></script>
 <!-- js libs -->
+<script>
+  var urlPath = document.location.href;
+  var fileName = urlPath.substring(urlPath.lastIndexOf( "/" )+1 );
+</script>
 <!-- js script -->
-
 <script src="js/initFlickity.js"></script>
 <script src="js/loadMessage.js"></script>
-
-<!-- <script src="js/page5_addTextarea.js"></script> -->
-
 <script src="js/sideBarre.js"></script>
+<script src="js/adminTreatmentPreco.js"></script>
 <!-- js script -->
 <script>
   sideBarre_change("10%");
