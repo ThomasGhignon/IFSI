@@ -12,6 +12,13 @@ function reloadMessage()
                 var oldClass = $("#"+data.id).attr("class");
                 $("#"+data.id).addClass(data.className);
                 $("#"+data.id).removeClass(oldClass);
+
+                if($(".button_"+data.typeM).hasClass("flickiButton-select")){
+
+                }
+                else{
+                  $(".button_"+data.typeM).addClass("flickiButton-select");
+                }
               }
             }
           });

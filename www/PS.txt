@@ -7,3 +7,6 @@ A faire :
 -message d'erreur pour chaque script.
 -Clear tout les scripts
 -Mettre en place le fichier flickity
+
+-Compléter loadOldStatus() dans adminTreatmentPreco.js
+-Fixer le scroll du tchat de page5Preco.php et admin.php

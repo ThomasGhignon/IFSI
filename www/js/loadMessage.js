@@ -6,7 +6,17 @@ function loadMessage(path, typeOf_m)
       url : "module/load.php?typeOf_m="+typeOf_m+"&id="+id+"&admin="+fileName,
       type : "GET",
       success : function(html){
-        $(path).append(html);
+        var data = html;
+        if(data != '')
+        {
+          $(path).append(html);
+          if($(".button_"+typeOf_m).hasClass("flickiButton-select")){
+
+          }
+          else{
+            $(".button_"+typeOf_m).addClass("flickiButton-select");
+          }
+        }
       }
     });
   }
@@ -15,7 +25,11 @@ function loadMessage(path, typeOf_m)
       url : "module/load.php?typeOf_m="+typeOf_m+"&id=" + id,
       type : "GET",
       success : function(html){
-        $(path).append(html);
+        var data = html;
+        if(data != '')
+        {
+          $(path).append(html);
+        }
       }
     });
   }

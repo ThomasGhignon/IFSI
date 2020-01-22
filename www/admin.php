@@ -66,11 +66,11 @@ require_once('module/init.php');
         <p>Navigation</p>
       </div>
       <div class="button-group">
-        <span class="button">Méthode</span>
-        <span class="button">Matériel</span>
-        <span class="button">Matière / Malade</span>
-        <span class="button">Main d'oeuvre</span>
-        <span class="button">Milieu</span>
+        <span class="button button_methode">Méthode</span>
+        <span class="button button_materiel">Matériel</span>
+        <span class="button button_malade">Matière / Malade</span>
+        <span class="button button_mainoeuvre">Main d'oeuvre</span>
+        <span class="button button_milieu">Milieu</span>
       </div>
     </div>
     <div class="advancement">
@@ -79,7 +79,7 @@ require_once('module/init.php');
     <div class="legend">
       <span>Validé</span>
       <span>Refusé</span>
-      <span>A compléter</span>
+      <span>A compléter ou mal placé</span>
       <span>En attente</span>
     </div>
   </header>
@@ -97,6 +97,7 @@ require_once('module/init.php');
 <script src="js/loadMessage.js"></script>
 <script src="js/sideBarre.js"></script>
 <script src="js/adminTreatmentPreco.js"></script>
+<script src="js/adminNotif.js"></script>
 <!-- js script -->
 <script>
   sideBarre_change("10%");

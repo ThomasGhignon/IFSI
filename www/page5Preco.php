@@ -32,7 +32,11 @@ require_once('module/init.php');
     <div class="main-carousel">
       <div class="carousel-cell wrapCarousel">
         <div class="testOverflow">
-          <div class="messageContainer" id="methodeMessage"></div>
+          <div class="messageContainer" id="methodeMessage">
+            <div class="treatment">
+              <p>Entrez votre message !!!</p>
+            </div>
+          </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="methode">
@@ -45,7 +49,11 @@ require_once('module/init.php');
       </div>
       <div class="carousel-cell wrapCarousel">
         <div class="testOverflow">
-          <div class="messageContainer" id="materielMessage"></div>
+          <div class="messageContainer" id="materielMessage">
+            <div class="treatment">
+              <p>Entrez votre message !!!</p>
+            </div>
+          </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="materiel">
@@ -58,7 +66,11 @@ require_once('module/init.php');
       </div>
       <div class="carousel-cell wrapCarousel">
         <div class="testOverflow">
-          <div class="messageContainer" id="maladeMessage"></div>
+          <div class="messageContainer" id="maladeMessage">
+            <div class="treatment">
+              <p>Entrez votre message !!!</p>
+            </div>
+          </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="malade">
@@ -71,7 +83,11 @@ require_once('module/init.php');
       </div>
       <div class="carousel-cell wrapCarousel">
         <div class="testOverflow">
-          <div class="messageContainer" id="mainoeuvreMessage"></div>
+          <div class="messageContainer" id="mainoeuvreMessage">
+            <div class="treatment">
+              <p>Entrez votre message !!!</p>
+            </div>
+          </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="mainoeuvre">
@@ -85,7 +101,10 @@ require_once('module/init.php');
       <div class="carousel-cell wrapCarousel">
         <div class="testOverflow">
           <div class="messageContainer" id="milieuMessage">
-        </div>
+            <div class="treatment">
+              <p>Entrez votre message !!!</p>
+            </div>
+          </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="milieu">
@@ -108,11 +127,11 @@ require_once('module/init.php');
         <p>Navigation</p>
       </div>
       <div class="button-group">
-        <span class="button">Méthode</span>
-        <span class="button">Matériel</span>
-        <span class="button">Matière / Malade</span>
-        <span class="button">Main d'oeuvre</span>
-        <span class="button">Milieu</span>
+        <span class="button button_methodeMessage">Méthode</span>
+        <span class="button button_materielMessage">Matériel</span>
+        <span class="button button_maladeMessage">Matière / Malade</span>
+        <span class="button button_mainoeuvreMessage">Main d'oeuvre</span>
+        <span class="button button_milieuMessage">Milieu</span>
       </div>
     </div>
     <div class="advancement">
@@ -121,7 +140,7 @@ require_once('module/init.php');
     <div class="legend">
       <span>Validé</span>
       <span>Refusé</span>
-      <span>A compléter</span>
+      <span>A compléter ou mal placé</span>
       <span>En attente</span>
     </div>
   </header>

@@ -405,6 +405,21 @@ body
   box-shadow: 0px 0px 7px -5px rgba(0,0,0,0.75);
 }
 
+.flickiButton-select::before
+{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #EA2027;
+  display: block;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+
+  margin-right: 10px;
+}
+
 p
 {
   font-family:"poppinsMedium", sans-serif;
@@ -467,6 +482,9 @@ p
 
   cursor: pointer;
   margin: 5px 0;
+
+  display: flex;
+  align-items: center;
 }
 
 .advancement
