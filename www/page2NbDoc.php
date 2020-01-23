@@ -10,7 +10,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Document</title>
+  <title>Etape 2</title>
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page2_3.css">
   <link rel="stylesheet" href="css/style_global.css">
@@ -30,8 +30,8 @@ $_SESSION['nameTeam'] = $_GET['valName'];
       <!-- http://localhost/IFSI/www/page3M.php -->
       <form class="main" action="path">
         <div class="content" value="path">
-          <p>Entrez le code correspondant au<br>document où vous avez trouvé l'erreur :</p>
-          <input class="input" type="text" placeholder="ex : 0000000">
+          <p>Entrez le code à 6 chiffres trouvé sur l'un des documents :</p>
+          <input class="input" type="text" placeholder="ex : 000000">
         </div>
         <div class="button">
           <input type="submit" value="Envoyer">

@@ -25,7 +25,7 @@ $timestamp = ""; /*temps de jeu (en minute)*/
 
 /*Page 2*/
 /*numéro à valider*/
-$numPage2 = "1";
+$numPage2 = "627251";
 /*Page 2*/
 
 /*Page 3*/

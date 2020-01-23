@@ -410,7 +410,7 @@ body
   content: '';
   width: 10px;
   height: 10px;
-  background-color: #EA2027;
+  background-color: #00A19C;
   display: block;
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
@@ -532,7 +532,7 @@ p
   justify-content: center;
 
   box-sizing: border-box;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .legend span

@@ -79,7 +79,7 @@ require_once('module/init.php');
     <div class="legend">
       <span>Validé</span>
       <span>Refusé</span>
-      <span>A compléter ou mal placé</span>
+      <span>A compléter ou à reclasser</span>
       <span>En attente</span>
     </div>
   </header>
@@ -97,7 +97,7 @@ require_once('module/init.php');
 <script src="js/loadMessage.js"></script>
 <script src="js/sideBarre.js"></script>
 <script src="js/adminTreatmentPreco.js"></script>
-<script src="js/adminNotif.js"></script>
+<script src="js/removeNotif.js"></script>
 <!-- js script -->
 <script>
   sideBarre_change("10%");

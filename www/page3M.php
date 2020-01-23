@@ -9,7 +9,7 @@ require_once('module/config.php');
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Les 5 M</title>
+  <title>Etape 3</title>
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page3.css">
   <link rel="stylesheet" href="css/style_global.css">
@@ -29,7 +29,7 @@ require_once('module/config.php');
       <!-- http://localhost/IFSI/www/page4MBis.php -->
       <form class="main" action="">
         <div class="content">
-          <p>Entrez les mots correspondants aux cinq M :</p>
+          <p>Entrez les noms des cinq branches du diagramme d'Ishikawa :</p>
           <div>
             <input class="input1" type="text" placeholder="ex : M....">
             <input class="input2" type="text">

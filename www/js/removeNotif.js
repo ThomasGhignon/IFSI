@@ -1,4 +1,4 @@
-function admin_notifNewMessage()
+function removeNotif()
 {
   $(document).ready(function(){
     $('.button').click(function(){
@@ -8,4 +8,4 @@ function admin_notifNewMessage()
     });
   });
 }
-admin_notifNewMessage();
+removeNotif();

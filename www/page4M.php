@@ -32,7 +32,7 @@ require_once('module/config.php');
         <div class="parent">
           <div class="div1">
             <h2>Méthode</h2>
-            <select name="methode" id="methodeSelect_0">
+            <select class="selectMethode" name="methode" id="methodeSelect_0">
               <?php include 'module/selectM.php'; ?>
             </select>
             <select name="pets" id="methodeSelect_1">
@@ -130,6 +130,7 @@ require_once('module/config.php');
 <script src="js/page4MVerif.js"></script>
 <script src="js/error.js"></script>
 <script src="js/unitary_check.js"></script>
+<script src="js/testSelect.js"></script>
 <script src="js/sideBarre.js"></script>
 <script>
   sideBarre_change("30%");

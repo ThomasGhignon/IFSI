@@ -10,7 +10,7 @@ require_once('module/init.php');
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Préconisations</title>
+  <title>Etape 5</title>
 
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <!-- <link rel="stylesheet" href="css/style_global.css"> -->
@@ -34,13 +34,13 @@ require_once('module/init.php');
         <div class="testOverflow">
           <div class="messageContainer" id="methodeMessage">
             <div class="treatment">
-              <p>Entrez votre message !!!</p>
+              <p>Les solutions que vous avez envoyées s'afficheront ici. Utilisez la légende pour connaitre l'état de validation de de celles-ci.</p>
             </div>
           </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="methode">
-            <textarea placeholder="Entrez un préconisation" name="message"></textarea>
+            <textarea placeholder="Entrez une solution d'évitabilité" name="message"></textarea>
             <div>
               <input class="inputSubmit" type="submit" value="">
             </div>
@@ -51,13 +51,13 @@ require_once('module/init.php');
         <div class="testOverflow">
           <div class="messageContainer" id="materielMessage">
             <div class="treatment">
-              <p>Entrez votre message !!!</p>
+              <p>Les solutions que vous avez envoyées s'afficheront ici. Utilisez la légende pour connaitre l'état de validation de de celles-ci.</p>
             </div>
           </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="materiel">
-            <textarea placeholder="Entrez un préconisation" name="message"></textarea>
+            <textarea placeholder="Entrez une solution d'évitabilité" name="message"></textarea>
             <div>
               <input class="inputSubmit" type="submit" value="">
             </div>
@@ -68,13 +68,13 @@ require_once('module/init.php');
         <div class="testOverflow">
           <div class="messageContainer" id="maladeMessage">
             <div class="treatment">
-              <p>Entrez votre message !!!</p>
+              <p>Les solutions que vous avez envoyées s'afficheront ici. Utilisez la légende pour connaitre l'état de validation de de celles-ci.</p>
             </div>
           </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="malade">
-            <textarea placeholder="Entrez un préconisation" name="message"></textarea>
+            <textarea placeholder="Entrez une solution d'évitabilité" name="message"></textarea>
             <div>
               <input class="inputSubmit" type="submit" value="">
             </div>
@@ -85,13 +85,13 @@ require_once('module/init.php');
         <div class="testOverflow">
           <div class="messageContainer" id="mainoeuvreMessage">
             <div class="treatment">
-              <p>Entrez votre message !!!</p>
+              <p>Les solutions que vous avez envoyées s'afficheront ici. Utilisez la légende pour connaitre l'état de validation de de celles-ci.</p>
             </div>
           </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="mainoeuvre">
-            <textarea placeholder="Entrez un préconisation" name="message"></textarea>
+            <textarea placeholder="Entrez une solution d'évitabilité" name="message"></textarea>
             <div>
               <input class="inputSubmit" type="submit" value="">
             </div>
@@ -102,13 +102,13 @@ require_once('module/init.php');
         <div class="testOverflow">
           <div class="messageContainer" id="milieuMessage">
             <div class="treatment">
-              <p>Entrez votre message !!!</p>
+              <p>Les solutions que vous avez envoyées s'afficheront ici. Utilisez la légende pour connaitre l'état de validation de de celles-ci.</p>
             </div>
           </div>
         </div>
         <div class="sendContainer">
           <form method="POST" action="" id="milieu">
-            <textarea placeholder="Entrez un préconisation" name="message"></textarea>
+            <textarea placeholder="Entrez une solution d'évitabilité" name="message"></textarea>
             <div>
               <input class="inputSubmit" type="submit" value="">
             </div>
@@ -140,7 +140,7 @@ require_once('module/init.php');
     <div class="legend">
       <span>Validé</span>
       <span>Refusé</span>
-      <span>A compléter ou mal placé</span>
+      <span>A compléter ou à reclasser</span>
       <span>En attente</span>
     </div>
   </header>
@@ -158,7 +158,7 @@ require_once('module/init.php');
 <script src="js/page5Send.js"></script>
 <script src="js/loadMessage.js"></script>
 <script src="js/reloadMessage_user.js"></script>
-<!-- <script src="js/page5_addTextarea.js"></script> -->
+<script src="js/removeNotif.js"></script>
 <script src="js/sideBarre.js"></script>
 <!-- js script -->
 <script>
