@@ -16,3 +16,12 @@ A faire :
 -enlever page3MBis.php
 
 -mettre le timer
+
+
+YVAN :
+
+http://localhost/ifsi/www/page4M.php
+
+Charger les options du select aléatoirement à chaque chargement de page. (Pour cela les mettres dans une base de données).
+
+Enregistrées les réponses dans des tableaux JS et les comparer aux tableaux ressources (pour le faire débrouille toi... Pour toute demande d'aide téléphone au 36 30 le numéro du père noël).

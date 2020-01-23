@@ -16,7 +16,7 @@ require_once('module/init.php');
   <!-- <link rel="stylesheet" href="css/style_global.css"> -->
   <link rel="stylesheet" href="css/style_admin.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="js/libs/flickityMin.js"></script>
 </head>
 <body>
   <section class="leftContainer">
