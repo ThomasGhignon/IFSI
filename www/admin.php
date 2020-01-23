@@ -20,13 +20,7 @@ require_once('module/init.php');
 </head>
 <body>
   <section class="leftContainer">
-    <div class="sideBarre">
-      <div class="sideBarre_content">
-        <img src="img/sideBarre/SVG/transparencyBarre2.svg" alt="sideBarre">
-        <div class="hiddenBarre"></div>
-        <img src="img/sideBarre/SVG/fullBarre2.svg" alt="sideBarre">
-      </div>
-    </div>
+    <?php include 'module/sideBarreInclude.php'; ?>
   </section>
   <section class="middleContainer">
     <div class="main-carousel">
@@ -86,7 +80,6 @@ require_once('module/init.php');
 </body>
 <!-- js libs -->
 <script src="js/libs/jquery.js"></script>
-<script src="js/libs/flickityMin.js"></script>
 <!-- js libs -->
 <script>
   var urlPath = document.location.href;
@@ -98,6 +91,7 @@ require_once('module/init.php');
 <script src="js/sideBarre.js"></script>
 <script src="js/adminTreatmentPreco.js"></script>
 <script src="js/removeNotif.js"></script>
+<script src="js/countdown.js"></script>
 <!-- js script -->
 <script>
   sideBarre_change("10%");

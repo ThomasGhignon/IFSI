@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once('module/config.php');
-$_SESSION['nameTeam'] = $_GET['valName'];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,13 +18,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
 
   <header>
     <div class="wrap">
-      <div class="sideBarre">
-        <div class="sideBarre_content">
-          <img src="img/sideBarre/SVG/transparencyBarre2.svg" alt="sideBarre">
-          <div class="hiddenBarre"></div>
-          <img src="img/sideBarre/SVG/fullBarre2.svg" alt="sideBarre">
-        </div>
-      </div>
+      <?php include 'module/sideBarreInclude.php'; ?>
       <div class="errorMessage_container"></div>
       <!-- http://localhost/IFSI/www/page3M.php -->
       <form class="main" action="path">
@@ -45,6 +38,7 @@ $_SESSION['nameTeam'] = $_GET['valName'];
 <script src="js/error.js"></script>
 <script src="js/nbVerif.js"></script>
 <script src="js/sideBarre.js"></script>
+<script src="js/countdown.js"></script>
 <script>
   sideBarre_change("90%");
   nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");

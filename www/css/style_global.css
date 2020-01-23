@@ -182,6 +182,24 @@ input[type=text]
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#timer
+{
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer span
+{
+  font-family:"poppinsMedium", sans-serif;
+  color: #00A19C;
+  font-size: 20px;
 }
 
 .sideBarre_content

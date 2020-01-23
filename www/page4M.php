@@ -19,13 +19,7 @@ require_once('module/config.php');
 
   <header>
     <div class="wrap">
-      <div class="sideBarre">
-        <div class="sideBarre_content">
-          <img src="img/sideBarre/SVG/transparencyBarre2.svg" alt="sideBarre">
-          <div class="hiddenBarre"></div>
-          <img src="img/sideBarre/SVG/fullBarre2.svg" alt="sideBarre">
-        </div>
-      </div>
+      <?php include 'module/sideBarreInclude.php'; ?>
       <div class="errorMessage_container"></div>
       <!-- http://localhost/IFSI/www/page5Preco.php -->
       <form class="main" action="">
@@ -132,6 +126,7 @@ require_once('module/config.php');
 <script src="js/unitary_check.js"></script>
 <script src="js/testSelect.js"></script>
 <script src="js/sideBarre.js"></script>
+<script src="js/countdown.js"></script>
 <script>
   sideBarre_change("30%");
 </script>

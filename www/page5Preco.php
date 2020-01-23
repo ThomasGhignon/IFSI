@@ -20,13 +20,7 @@ require_once('module/init.php');
 </head>
 <body>
   <section class="leftContainer">
-    <div class="sideBarre">
-      <div class="sideBarre_content">
-        <img src="img/sideBarre/SVG/transparencyBarre2.svg" alt="sideBarre">
-        <div class="hiddenBarre"></div>
-        <img src="img/sideBarre/SVG/fullBarre2.svg" alt="sideBarre">
-      </div>
-    </div>
+    <?php include 'module/sideBarreInclude.php'; ?>
   </section>
   <section class="middleContainer">
     <div class="main-carousel">
@@ -159,6 +153,7 @@ require_once('module/init.php');
 <script src="js/reloadMessage_user.js"></script>
 <script src="js/removeNotif.js"></script>
 <script src="js/sideBarre.js"></script>
+<script src="js/countdown.js"></script>
 <!-- js script -->
 <script>
   sideBarre_change("10%");
