@@ -32,15 +32,14 @@ require_once('module/config.php');
       </form>
     </div>
   </header>
-
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/error.js"></script>
+  <script src="js/nbVerif.js"></script>
+  <script src="js/sideBarre.js"></script>
+  <script src="js/countdown.js"></script>
+  <script>
+    sideBarre_change("90%");
+    nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
+  </script>
 </body>
-<script src="js/libs/jquery.js"></script>
-<script src="js/error.js"></script>
-<script src="js/nbVerif.js"></script>
-<script src="js/sideBarre.js"></script>
-<script src="js/countdown.js"></script>
-<script>
-  sideBarre_change("90%");
-  nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
-</script>
 </html>

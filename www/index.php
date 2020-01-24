@@ -38,13 +38,12 @@ require_once('module/config.php');
       </div>
     </div>
   </header>
-
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/error.js"></script>
+  <script src="js/start.js"></script>
+  <script>
+    start_verif("<?php echo($ipLocal); ?>","page2NbDoc");
+  </script>
 </body>
-<script src="js/libs/jquery.js"></script>
-<script src="js/error.js"></script>
-<script src="js/start.js"></script>
-<script>
-  start_verif("<?php echo($ipLocal); ?>","page2NbDoc");
-</script>
 </html>
 
