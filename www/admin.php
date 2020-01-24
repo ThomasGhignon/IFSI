@@ -13,10 +13,9 @@ require_once('module/init.php');
   <title>Préconisations - Administrateur</title>
 
   <link rel="stylesheet" href="css/libs/cssReset.css">
-  <!-- <link rel="stylesheet" href="css/style_global.css"> -->
+  <link rel="stylesheet" href="css/style_global.css">
   <link rel="stylesheet" href="css/style_admin.css">
   <!-- CSS -->
-  <script src="js/libs/flickityMin.js"></script>
 </head>
 <body>
   <section class="leftContainer">
@@ -80,6 +79,7 @@ require_once('module/init.php');
 </body>
 <!-- js libs -->
 <script src="js/libs/jquery.js"></script>
+<script src="js/libs/flickity.pkgd.js"></script>
 <!-- js libs -->
 <script>
   var urlPath = document.location.href;

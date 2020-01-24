@@ -23,9 +23,9 @@ require_once('module/config.php');
       <!-- http://localhost/IFSI/www/page4MBis.php -->
       <form class="main" action="">
         <div class="content">
-          <p>Entrez les noms des cinq branches du diagramme d'Ishikawa :</p>
+          <p>Entrez les noms des cinq branches du diagramme d'Ishikawa : <br>( Pas de majuscule )</p>
           <div>
-            <input class="input1" type="text" placeholder="ex : M....">
+            <input class="input1" type="text" placeholder="ex : m....">
             <input class="input2" type="text">
             <input class="input3" type="text">
             <input class="input4" type="text">

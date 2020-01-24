@@ -1,4 +1,7 @@
 <?php
+/*
+call :
+*/
 require_once('init.php');
 
 $request = $bdd->query('SELECT * FROM `even_log` Limit 1');

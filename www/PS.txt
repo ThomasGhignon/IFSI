@@ -1,8 +1,10 @@
-A demander :
+° A demander :
 
 Titre de chaque page
 
-A faire :
+° A faire :
+
+-EnveLog php : séparer les fonctions
 
 -Changer les noms M : tout en minuscule
 
@@ -18,7 +20,7 @@ A faire :
 -mettre le timer
 
 
-YVAN :
+° YVAN :
 
 http://localhost/ifsi/www/page4M.php
 
@@ -27,7 +29,11 @@ Charger les options du select aléatoirement à chaque chargement de page. (Pour
 Enregistrées les réponses dans des tableaux JS et les comparer aux tableaux ressources (pour le faire débrouille toi... Pour toute demande d'aide téléphone au 36 30 le numéro du père noël).
 
 
-Installation :
+° Installation :
 
 VLC portatif
 Laragon
+
+° Si il reste du temps :
+
+-fixer la page 5 m : mettre que matière plus malade donc enlever message orange qui provoque un petit bug.

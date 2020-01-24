@@ -12,8 +12,8 @@ function M_verif(root)
       }
 
       //set
-      var nameM = ["Méthode", "Milieu", "Matériel", "Main d'oeuvre"];
-      var nameM_bis = ["Malade", "Matière"];
+      var nameM = ["méthode", "milieu", "matériel", "main d'oeuvre"];
+      var nameM_bis = ["malade", "matière"];
       var missingWord_cpt = 0;
       var duplicateWord_cpt = 0;
       //set
@@ -94,11 +94,11 @@ function M_verif(root)
         for (var i = 0; i < 5; i++)
         {
           var j = i+1;
-          if (data[i] == "Malade")
+          if (data[i] == "malade")
           {
             $('.input'+j).css('border-color','#F39C12');
           }
-          if (data[i] == "Matière")
+          if (data[i] == "matière")
           {
             $('.input'+j).css('border-color','#F39C12');
           }
@@ -107,7 +107,7 @@ function M_verif(root)
       //check si tout les inputs sont validés
       if (data[0] == true && data[1] == true && data[2] == true && data[3] == true && data[4] == true)
       {
-        $(location).attr('href',"http://"+root+"/IFSI/www/page3MBis.php");
+        $(location).attr('href',"http://"+root+"/IFSI/www/page4M.php");
       }
       else
       {

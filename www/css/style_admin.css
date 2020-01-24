@@ -106,12 +106,14 @@ body
   height: 100vh;
   display: flex;
   user-select: none;
+  overflow: hidden;
 }
 .leftContainer
 {
   width: 10%;
   height: 100%;
   background-color: #FFF;
+  z-index: 999;
 }
 
 .sideBarre
@@ -177,6 +179,11 @@ body
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
   border: 0px solid #000000;
+}
+
+.flickity-slider
+{
+  height: 98%;
 }
 
 .main-carousel
@@ -440,6 +447,7 @@ body
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  z-index: 999;
 }
 
 .typeM
