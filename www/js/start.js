@@ -13,7 +13,7 @@ function start_verif(root, path)
       {
         localStorage.setItem("time","3600");
         //redirection
-        $(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php?valName="+inputData+"");
+        $(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php");
       }
     });
   });
