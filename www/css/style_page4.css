@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.parent {
+.main_content{
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(4, 1fr);
@@ -28,13 +28,13 @@ padding: 20px 0;
 box-sizing: border-box;
 }
 
-.div1 { grid-area: 1 / 1 / 6 / 2; }
-.div2 { grid-area: 1 / 2 / 3 / 3; }
-.div3 { grid-area: 3 / 2 / 5 / 3; }
-.div4 { grid-area: 1 / 3 / 5 / 4; }
-.div5 { grid-area: 1 / 4 / 5 / 5; }
+#methode { grid-area: 1 / 1 / 6 / 2; }
+#materiel { grid-area: 1 / 2 / 3 / 3; }
+#malade { grid-area: 3 / 2 / 5 / 3; }
+#mainoeuvre { grid-area: 1 / 3 / 5 / 4; }
+#milieu { grid-area: 1 / 4 / 5 / 5; }
 
-.parent>div
+.main_content>div
 {
   display: flex;
   justify-content: flex-start;
@@ -51,17 +51,17 @@ box-sizing: border-box;
   border: 0px solid #FFF;
 }
 
-.div2
+#materiel
 {
   margin-bottom: 10px;
 }
 
-.div3
+#malade
 {
   margin-top: 10px;
 }
 
-.parent>div select
+.main_content>div select
 {
   width: 80%;
   margin-bottom: 20px;
