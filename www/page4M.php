@@ -9,7 +9,7 @@ require_once('module/config.php');
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Document</title>
+  <title>Etape 4</title>
 
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_page4.css">
@@ -38,16 +38,10 @@ require_once('module/config.php');
             <select name="test" id="methodeSelect_3">
               <?php include 'module/selectM.php'; ?>
             </select>
-            <select name="test" id="methodeSelect_4">
-              <?php include 'module/selectM.php'; ?>
-            </select>
           </div>
           <div id="materiel" class="selectM_1">
             <h2>Matériel</h2>
             <select name="" id="materielSelect_0">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="materielSelect_1">
               <?php include 'module/selectM.php'; ?>
             </select>
           </div>
@@ -60,6 +54,9 @@ require_once('module/config.php');
               <?php include 'module/selectM.php'; ?>
             </select>
             <select name="" id="maladeSelect_2">
+              <?php include 'module/selectM.php'; ?>
+            </select>
+            <select name="" id="maladeSelect_3">
               <?php include 'module/selectM.php'; ?>
             </select>
           </div>
@@ -77,21 +74,6 @@ require_once('module/config.php');
             <select name="" id="mainoeuvreSelect_3">
               <?php include 'module/selectM.php'; ?>
             </select>
-            <select name="" id="mainoeuvreSelect_4">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="mainoeuvreSelect_5">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="mainoeuvreSelect_6">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="mainoeuvreSelect_7">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="mainoeuvreSelect_8">
-              <?php include 'module/selectM.php'; ?>
-            </select>
           </div>
           <div id="milieu" class="selectM_4">
             <h2>Milieu</h2>
@@ -102,12 +84,6 @@ require_once('module/config.php');
               <?php include 'module/selectM.php'; ?>
             </select>
             <select name="" id="milieuSelect_2">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="milieuSelect_3">
-              <?php include 'module/selectM.php'; ?>
-            </select>
-            <select name="" id="milieuSelect_4">
               <?php include 'module/selectM.php'; ?>
             </select>
           </div>
