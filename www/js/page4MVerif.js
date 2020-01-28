@@ -1,4 +1,4 @@
-function M_step2Verif()
+function M_step2Verif(root)
 {
   $(document).ready(function(){
     $('.main').submit(function(event){
@@ -39,36 +39,21 @@ function M_step2Verif()
       for (var i = 0; i < nbSelect_4; i++) {
         array_milieu[i] = $("#milieuSelect_"+i+">option:selected").text();
       }
+      /*création tableau 2D*/
+      typeM_Array[0] = array_methode;
+      typeM_Array[1] = array_materiel;
+      typeM_Array[2] = array_malade;
+      typeM_Array[3] = array_mainoeuvre;
+      typeM_Array[4] = array_milieu;
 
-        /*for (var i = 0; i < 5; i++) {
-          var nb = "nbSelect_"+i;
-          console.log(nb);
-          typeM_Array[i] = selectRetrieve(name, i);
-        }*/
-
-        /*création tableau 2D*/
-        typeM_Array[0] = array_methode;
-        typeM_Array[1] = array_materiel;
-        typeM_Array[2] = array_malade;
-        typeM_Array[3] = array_mainoeuvre;
-        typeM_Array[4] = array_milieu;
-
-        /*var jsonArray = JSON.stringify(typeM_Array);*/
-
-        /*obj=new Object();
-        obj["nom"]= 'pierre';
-        obj["age"]= '33';
-        var jsondata = JSON.stringify(obj);
-        console.log(obj);*/
-
-        retrieveArrayOrigin(typeM_Array);
-      });
+      retrieveArrayOrigin(typeM_Array, root);
+    });
   });
 }
-M_step2Verif();
+/*M_step2Verif("localhost");*/
 
 /*récupération bonnes données (pour le moment pas stocké dans une base)*/
-function retrieveArrayOrigin(userArray)
+function retrieveArrayOrigin(userArray, root)
 {
   $.ajax({
     url : "module/page4Check.php",
@@ -77,14 +62,14 @@ function retrieveArrayOrigin(userArray)
       if (jsonArray != "")
       {
         var dataOrigin = JSON.parse(jsonArray);
-        checkData(dataOrigin, userArray);
+        checkData(dataOrigin, userArray, root);
       }
     }
   });
 }
 
 /*comparatif des tableau origin et user*/
-function checkData(data, userArray)
+function checkData(data, userArray, root)
 {
   var assetArray = [[],[],[],[],[]];
   for (var i = 0; i < 5; i++)
@@ -94,6 +79,7 @@ function checkData(data, userArray)
       assetArray[i][j] = "";
     }
   }
+
   //boucle tableau 2D : userArray
   for (var i = 0; i < 5; i++) //longueur de data et userArray = 5 car 5 M
   {
@@ -126,10 +112,10 @@ function checkData(data, userArray)
       }
     }
   }
-  refreshView(assetArray);
+  refreshView(assetArray, root);
 }
 
-function refreshView(array)
+function refreshView(array, root)
 {
   console.log(array);
   var cpt = 0;
@@ -150,58 +136,12 @@ function refreshView(array)
       }
     }
   }
-}
-
-
-
-
-/*//boucle tableau 2D : data
-        for (var z = 0; z < 5; z++)
-        {
-          for (var m = 0; m < data[z].length; m++)
-          {
-            //vérification correspondance
-            if (userArray[i][j] == data[z][m])
-            {
-              var cpt = 0;
-              //vérifier si condition n'est pas déjà vérifié pour la même phrase
-              for (var t = 0; t < 5; t++)
-              {
-                for (var p = 0; p < userArray[i].length; p++)
-                {
-                  if (userArray[i][j] == userArray[t][p])
-                  {
-                    cpt++;
-                    console.log(cpt);
-                    if (cpt>=2)
-                    {
-                      userArray[t][p] = false;
-                      console.log(userArray[t][p]);
-                    }
-                  }
-                }
-              }
-            }
-            //else possible
-          }*/
-
-
-
-
-
-
-
-/*function selectRetrieve(nb, typeM)
-{
-  var newArray = [];
-  console.log(nb, typeM);
-  for (var i = 0; i < nb; i++) {
-    var index = i+1;
-    console.log(index);
-    newArray[i] = $("."+typeM+" select:nth-of-type("+index+")").val();
+  if (cpt == 0)
+  {
+    $(location).attr('href',"http://"+root+"/IFSI/www/page5Preco.php");
   }
-  console.log(newArray);
-  return newArray;
-}*/
-
-
+  else
+  {
+    showError("vous avez "+cpt+" erreur(s)", "red");
+  }
+}

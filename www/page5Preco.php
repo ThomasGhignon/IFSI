@@ -128,7 +128,8 @@ require_once('module/init.php');
       </div>
     </div>
     <div class="advancement">
-      <span>1 / 2</span>
+      <!-- <span>1 / 2</span> -->
+      <span><span class="advancement_stat"></span> / <span class="advancement_goal"></span></span>
     </div>
     <div class="legend">
       <span>Validé</span>

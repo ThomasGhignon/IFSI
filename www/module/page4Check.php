@@ -1,5 +1,6 @@
 <?php
 
+/*Methode*/
 $arrayOrigin_0=array(
 0=>'Transfusion programmée et transfusion en urgence relative',
 1=>'Interruption de tache pour l’IDE 1: CGR laissés dans la salle de soin car  urgence à gérer',
@@ -9,10 +10,12 @@ $arrayOrigin_0=array(
 5=>'Livraison des CGR par un coursier en dehors de la présence de l’IDE 2 (IDE 2 non informée de la livraison des culots par le coursier)',
 6=>'Contrôle de concordance de l’identité et des produits livrés dehors de la présence du coursier');
 
+/*materiel*/
 $arrayOrigin_1=array(
 0=>'Plan de travail commun aux 2 secteurs',
 1=>'Pas de container ou plateau sur lequel le nom du patient est indiqué (: le bon de délivrance ne doit JAMAIS être dissocié des CGR)');
 
+/*malade*/
 $arrayOrigin_2=array(
 0=>'2 demandes de sang en même temps',
 1=>'2 transfusions à des heures rapprochées',
@@ -21,6 +24,7 @@ $arrayOrigin_2=array(
 4=>'2 femmes à transfuser',
 5=>'2 prescriptions par 2 prescripteurs');
 
+/*main d'oeuvre*/
 $arrayOrigin_3=array(
 0=>'IDE 2 qui ne demande pas d’aide car peur du jugement et peur du non renouvellement de son contrat',
 1=>'Stress ; Fatigue ? À investiguer',
@@ -29,6 +33,7 @@ $arrayOrigin_3=array(
 4=>'Absence de communication entre les 2 IDE car sont affectées sur 2 secteurs différents',
 5=>'Mauvaise interprétation du contrôle ultime par IDE 2 et EIDE');
 
+/*milieu*/
 $arrayOrigin_4=array(
 0=>'Surcharge de travail : (IDE de nuit débordée, retard dans l’organisation des soins pour IDE 2)',
 1=>'Absence de l’IDE en J (qui aurait pu gérer l’urgence de M. D. par exemple)',

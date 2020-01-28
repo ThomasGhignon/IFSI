@@ -103,6 +103,7 @@ require_once('module/config.php');
   <script src="js/countdown.js"></script>
   <script>
     sideBarre_change("30%");
+    M_step2Verif("<?php echo($ipLocal); ?>");
   </script>
 </body>
 </html>
