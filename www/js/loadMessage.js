@@ -43,7 +43,7 @@ function load_methode()
     setTimeout( function(){
         loadMessage(path, typeOf_m);
         load_methode();
-    }, 1000);
+    }, 4000);
   });
 }
 load_methode();
@@ -56,7 +56,7 @@ function load_materiel()
     setTimeout( function(){
         loadMessage(path, typeOf_m);
         load_materiel();
-    }, 1000);
+    }, 4000);
   });
 }
 load_materiel();
@@ -69,7 +69,7 @@ function load_malade()
     setTimeout( function(){
         loadMessage(path, typeOf_m);
         load_malade();
-    }, 1000);
+    }, 4000);
   });
 }
 load_malade();
@@ -82,7 +82,7 @@ function load_mainoeuvre()
     setTimeout( function(){
         loadMessage(path, typeOf_m);
         load_mainoeuvre();
-    }, 1000);
+    }, 4000);
   });
 }
 load_mainoeuvre();
@@ -95,7 +95,7 @@ function load_milieu()
     setTimeout( function(){
         loadMessage(path, typeOf_m);
         load_milieu();
-    }, 1000);
+    }, 4000);
   });
 }
 load_milieu();

@@ -23,7 +23,8 @@ function reloadMessage()
             }
           });
       reloadMessage();
-    }, 1000);
+    }, 4000);
   });
 }
 reloadMessage();
+

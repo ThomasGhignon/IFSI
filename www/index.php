@@ -20,7 +20,7 @@ require_once('module/config.php');
   <header>
     <div class="connectionAdmin">
       <img src="img/settings.svg" alt="parametre">
-      <a href="http://localhost/IFSI/www/connectionAdmin.php">Admin</a>
+      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/connectionAdmin.php">Admin</a>
     </div>
     <div class="wrap">
       <div class="errorMessage_container"></div>
