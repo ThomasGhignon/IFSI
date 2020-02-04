@@ -148,9 +148,12 @@ require_once('module/init.php');
   </script>
   <!-- js script -->
   <script src="js/initFlickity.js"></script>
+
   <script src="js/page5Send.js"></script>
   <script src="js/loadMessage.js"></script>
   <script src="js/reloadMessage_user.js"></script>
+  <script src="js/page5_checkValidated.js"></script>
+
   <script src="js/removeNotif.js"></script>
   <script src="js/sideBarre.js"></script>
   <script src="js/countdown.js"></script>

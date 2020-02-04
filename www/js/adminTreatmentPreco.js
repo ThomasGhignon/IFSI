@@ -52,3 +52,11 @@ function updateClassMessage(id, status, typeM)
       type : "GET",
   });
 }
+
+/*function updateClassMessage(id, status, typeM)
+{
+  $.ajax({
+      url : "module/updateClassMessage.php?id="+id+"&stat="+status+"&typeM="+typeM+"&typeEven=page5_status",
+      type : "POST",
+  });
+}*/
