@@ -14,7 +14,9 @@ function countdown(duree)
   m=0;h=0;
   if(s<0)
   {
-    alert("fini"); //redirection fin de jeu (pas encore fait)
+    //redirection
+    var root = "localhost";
+    $(location).attr('href',"http://"+root+"/IFSI/www/finalPage_lose.php");
   }
   else
   {

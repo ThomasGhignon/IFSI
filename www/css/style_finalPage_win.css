@@ -1,0 +1,19 @@
+body
+{
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+header
+{
+  background-color: #00A19C;
+  height: 100vh;
+}
+
+h1
+{
+  color: #FFF;
+  font-size: 6em;
+}

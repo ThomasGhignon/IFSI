@@ -67,7 +67,7 @@ require_once('module/init.php');
       </div>
     </div>
     <div class="advancement">
-      <span>1 / 2</span>
+      <span>Réponses à valider : <span class="admin_goal">4</span></span>
     </div>
     <div class="legend">
       <span>Validé</span>
@@ -81,6 +81,13 @@ require_once('module/init.php');
   <script src="js/libs/flickity.pkgd.js"></script>
   <!-- js libs -->
   <script>
+    var page5Advancement = [0,1,2,3,4];
+    page5Advancement[0] = [0,4];
+    page5Advancement[1] = [0,1];
+    page5Advancement[2] = [0,4];
+    page5Advancement[3] = [0,5];
+    page5Advancement[4] = [0,1];
+
     var urlPath = document.location.href;
     var fileName = urlPath.substring(urlPath.lastIndexOf( "/" )+1 );
   </script>
@@ -90,7 +97,7 @@ require_once('module/init.php');
   <script src="js/sideBarre.js"></script>
   <script src="js/adminTreatmentPreco.js"></script>
   <script src="js/removeNotif.js"></script>
-  <script src="js/countdown.js"></script>
+  <!-- <script src="js/countdown.js"></script> -->
   <!-- js script -->
   <script>
     sideBarre_change("10%");

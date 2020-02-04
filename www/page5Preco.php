@@ -128,8 +128,7 @@ require_once('module/init.php');
       </div>
     </div>
     <div class="advancement">
-      <!-- <span>1 / 2</span> -->
-      <span><span class="advancement_stat"></span> / <span class="advancement_goal"></span></span>
+      <span><span class="advancement_stat">0</span> / <span class="advancement_goal">4</span></span>
     </div>
     <div class="legend">
       <span>Validé</span>
@@ -145,6 +144,13 @@ require_once('module/init.php');
   <script>
     var urlPath = document.location.href;
     var fileName = urlPath.substring(urlPath.lastIndexOf( "/" )+1 );
+
+    var page5Advancement = [0,1,2,3,4];
+    page5Advancement[0] = [0,4];
+    page5Advancement[1] = [0,1];
+    page5Advancement[2] = [0,4];
+    page5Advancement[3] = [0,5];
+    page5Advancement[4] = [0,1];
   </script>
   <!-- js script -->
   <script src="js/initFlickity.js"></script>
@@ -152,7 +158,6 @@ require_once('module/init.php');
   <script src="js/page5Send.js"></script>
   <script src="js/loadMessage.js"></script>
   <script src="js/reloadMessage_user.js"></script>
-  <script src="js/page5_checkValidated.js"></script>
 
   <script src="js/removeNotif.js"></script>
   <script src="js/sideBarre.js"></script>
