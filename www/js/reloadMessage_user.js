@@ -48,35 +48,29 @@ function reloadMessage()
                 }else{
                   if (parentId =="maladeMessage"){
                     maladeMessage_checkCount = maladeMessage_checkCount+1;
-                    if (maladeMessage_checkCount >= 2){
-                      page5Advancement[2][0] = maladeMessage_checkCount;
-                      $('.advancement_stat').text(page5Advancement[2][0]);
-                      if (page5Advancement[2][0] >= page5Advancement[2][1]){
-                        page5Advancement[2] = true;
-                        $("#malade").remove();
-                      }
+                    page5Advancement[2][0] = maladeMessage_checkCount;
+                    $('.advancement_stat').text(page5Advancement[2][0]);
+                    if (page5Advancement[2][0] >= page5Advancement[2][1]){
+                      page5Advancement[2] = true;
+                      $("#malade").remove();
                     }
                   }else{
                     if (parentId =="mainoeuvreMessage"){
                       mainoeuvreMessage_checkCount = mainoeuvreMessage_checkCount+1;
-                      if (mainoeuvreMessage_checkCount >= 2){
-                        page5Advancement[3][0] = mainoeuvreMessage_checkCount;
-                        $('.advancement_stat').text(page5Advancement[3][0]);
-                        if (page5Advancement[3][0] >= page5Advancement[3][1]){
-                          page5Advancement[3] = true;
-                          $("#mainoeuvre").remove();
-                        }
+                      page5Advancement[3][0] = mainoeuvreMessage_checkCount;
+                      $('.advancement_stat').text(page5Advancement[3][0]);
+                      if (page5Advancement[3][0] >= page5Advancement[3][1]){
+                        page5Advancement[3] = true;
+                        $("#mainoeuvre").remove();
                       }
                     }else{
                       if (parentId =="milieuMessage"){
                         milieuMessage_checkCount = milieuMessage_checkCount+1;
-                        if (milieuMessage_checkCount >= 2){
-                          page5Advancement[4][0] = milieuMessage_checkCount;
-                          $('.advancement_stat').text(page5Advancement[4][0]);
-                          if (page5Advancement[4][0] >= page5Advancement[4][1]){
-                            page5Advancement[4] = true;
-                            $("#milieu").remove();
-                          }
+                        page5Advancement[4][0] = milieuMessage_checkCount;
+                        $('.advancement_stat').text(page5Advancement[4][0]);
+                        if (page5Advancement[4][0] >= page5Advancement[4][1]){
+                          page5Advancement[4] = true;
+                          $("#milieu").remove();
                         }
                       }else{
                         console.log("Error");

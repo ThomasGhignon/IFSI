@@ -13,7 +13,6 @@
 <option>L’unité de soins du dessus est en travaux, le bruit a gêné  la concentration de l’IDE 2</option>
 <option>2 transfusions à des heures rapprochées</option>
 <option>Organisation des soins bousculée par plusieurs situations aigues (aggravation de l’état de patients dans les deux secteurs de soins)</option>
-<option>Service divisé en 2 secteurs avec une salle de soin commune</option>
 <option>Transfusion programmée et transfusion en urgence relative</option>
 <option>Interruption de tache pour l’IDE 1: CGR laissés dans la salle de soin car  urgence à gérer</option>
 <option>Connaissances insuffisantes (connaissances partielles de la procédure pour IDE 2 et connaissance insuffisantes relative à l’acte transfusionnel pour IDE 2 et EIDE)</option>
