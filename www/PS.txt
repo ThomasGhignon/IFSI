@@ -4,35 +4,7 @@ Titre de chaque page
 
 ° A faire :
 
--EnveLog php : séparer les fonctions
-
--Changer les noms M : tout en minuscule
-
--message d'erreur pour chaque script.
 -Clear tout les scripts
--Mettre en place le fichier flickity
-
--Compléter loadOldStatus() dans adminTreatmentPreco.js
--Fixer le scroll du tchat de page5Preco.php et admin.php
-
--enlever page3MBis.php
-
--mettre le timer
-
-
-° YVAN :
-
-http://localhost/ifsi/www/page4M.php
-
-Charger les options du select aléatoirement à chaque chargement de page. (Pour cela les mettres dans une base de données).
-
-Enregistrées les réponses dans des tableaux JS et les comparer aux tableaux ressources (pour le faire débrouille toi... Pour toute demande d'aide téléphone au 36 30 le numéro du père noël).
-
-
-° Installation :
-
-VLC portatif
-Laragon
 
 ° Si il reste du temps :
 

@@ -19,7 +19,7 @@ require_once('module/init.php');
   <header>
     <div class="wrap">
       <h1>Gagné !!!</h1>
-      <?php include 'module/dataResult.php' ?>
+      <?php include 'module/dataResultOverview.php' ?>
     </div>
   </header>
 
