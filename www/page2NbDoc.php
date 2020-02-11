@@ -42,6 +42,7 @@ $_SESSION['nameTeam'] = 'data';
   <script>
     sideBarre_change("74%");
     nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
+    console.log(localStorage);
   </script>
 </body>
 </html>

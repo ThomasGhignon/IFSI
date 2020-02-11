@@ -105,6 +105,7 @@ require_once('module/config.php');
   <script>
     sideBarre_change("36%");
     M_step2Verif("<?php echo($ipLocal); ?>");
+    console.log(localStorage);
   </script>
 </body>
 </html>

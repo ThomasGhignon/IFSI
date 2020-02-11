@@ -1,8 +1,8 @@
 var nbError = localStorage.getItem("page3_error");
+console.log(nbError);
 function M_verif(root)
 {
   $(document).ready(function(){
-    console.log(localStorage);
     $(".main").submit(function(event){
       event.preventDefault();
       //set input

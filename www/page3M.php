@@ -49,7 +49,7 @@ require_once('module/config.php');
   <script>
     sideBarre_change("55%");
     M_verif("<?php echo($ipLocal); ?>");
-    console.log(localStorage['page2_time']);
+    console.log(localStorage);
   </script>
 </body>
 </html>

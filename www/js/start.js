@@ -21,17 +21,9 @@ function start_verif(root)
         localStorage.setItem("page4_time", "");
         localStorage.setItem("page4_error", "0");
         localStorage.setItem("page5_time", "");
+        localStorage.setItem("page5_error", "0");
         //redirection
         $(location).attr('href',"http://"+root+"/IFSI/www/page2NbDoc.php");
-        //var data = "nameTeam";
-        /*$.ajax({
-            type: 'POST',
-            url: 'module/sessionConfig.php',
-            data: 'nameSession='+data+'&data='+inputData,
-            success:function(){
-              $(location).attr('href',"http://"+root+"/IFSI/www/page2NbDoc.php");
-            }
-        });*/
       }
     });
   });

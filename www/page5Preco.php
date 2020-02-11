@@ -166,6 +166,7 @@ require_once('module/init.php');
   <!-- js script -->
   <script>
     sideBarre_change("17%");
+    console.log(localStorage);
   </script>
 </body>
 </html>
