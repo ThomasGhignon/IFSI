@@ -1,3 +1,4 @@
+var nbError = localStorage.getItem("page3_error");
 function M_verif(root)
 {
   $(document).ready(function(){
@@ -109,7 +110,14 @@ function M_verif(root)
       if (data[0] == true && data[1] == true && data[2] == true && data[3] == true && data[4] == true)
       {
         localStorage.setItem("page3_time", localStorage.getItem("time"));
-
+        if (nbError)
+        {
+          localStorage.setItem("page3_error", nbError);
+        }
+        else
+        {
+          localStorage.setItem("page3_error", "0");
+        }
         $(location).attr('href',"http://"+root+"/IFSI/www/page4M.php");
       }
       else
@@ -127,10 +135,7 @@ function M_verif(root)
           showError('mots synonymes', "orange");
 
         }
-
-        var nbError = localStorage.getItem("page3_error");
         nbError = nbError+missingWord_cpt;
-        localStorage.setItem("page3_error", nbError);
       }
     });
   });

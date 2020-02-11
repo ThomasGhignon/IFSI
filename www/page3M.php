@@ -44,6 +44,7 @@ require_once('module/config.php');
   <script src="js/page3MVerif.js"></script>
   <script src="js/error.js"></script>
   <script src="js/unitary_check.js"></script>
+  <script src="js/dataResultSend.js"></script>
   <script src="js/sideBarre.js"></script>
   <script>
     sideBarre_change("55%");

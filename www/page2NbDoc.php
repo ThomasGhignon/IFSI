@@ -37,6 +37,7 @@ $_SESSION['nameTeam'] = 'data';
   <script src="js/error.js"></script>
   <script src="js/nbVerif.js"></script>
   <script src="js/sideBarre.js"></script>
+  <script src="js/dataResultSend.js"></script>
   <script src="js/countdown.js"></script>
   <script>
     sideBarre_change("74%");

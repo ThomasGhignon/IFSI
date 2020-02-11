@@ -23,3 +23,4 @@ $request = $bdd->prepare('INSERT INTO data_result(name,page2_time,page2_error,pa
       'page5_time' => $page5_time,
       'page5_error' => $page5_error,
   ));
+

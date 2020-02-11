@@ -1,5 +1,6 @@
 <?php
 require_once('module/init.php');
+require_once('module/config.php');
  ?>
 <!DOCTYPE html>
 <html lang="fr">

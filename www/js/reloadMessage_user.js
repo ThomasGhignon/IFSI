@@ -90,7 +90,6 @@ function reloadMessage()
               localStorage.setItem("page5_time", localStorage.getItem("time"));
               localStorage.setItem("page5_error", cptError);
               dataSend(root, "finalPage_win");
-              //$(location).attr('href',"http://"+root+"/IFSI/www/finalPage_win.php");
             }
           }
         }

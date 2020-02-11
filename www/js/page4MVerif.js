@@ -147,7 +147,7 @@ function refreshView(array, root)
     showError("vous avez "+cpt+" erreur(s)", "red");
 
     var nbError = localStorage.getItem("page3_error");
-    nbError = nbError+missingWord_cpt;
+    nbError = nbError+cpt;
     localStorage.setItem("page3_error", nbError);
   }
 }
