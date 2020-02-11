@@ -1,6 +1,7 @@
 function M_verif(root)
 {
   $(document).ready(function(){
+    console.log(localStorage);
     $(".main").submit(function(event){
       event.preventDefault();
       //set input
@@ -107,6 +108,8 @@ function M_verif(root)
       //check si tout les inputs sont validés
       if (data[0] == true && data[1] == true && data[2] == true && data[3] == true && data[4] == true)
       {
+        localStorage.setItem("page3_time", localStorage.getItem("time"));
+
         $(location).attr('href',"http://"+root+"/IFSI/www/page4M.php");
       }
       else
@@ -122,7 +125,12 @@ function M_verif(root)
         if (checked2[0]==checked2[1])
         {
           showError('mots synonymes', "orange");
+
         }
+
+        var nbError = localStorage.getItem("page3_error");
+        nbError = nbError+missingWord_cpt;
+        localStorage.setItem("page3_error", nbError);
       }
     });
   });

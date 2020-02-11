@@ -1,3 +1,6 @@
+<?php
+require_once('module/init.php');
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,9 +19,11 @@
   <header>
     <div class="wrap">
       <h1>Gagné !!!</h1>
+      <?php include 'module/dataResult.php' ?>
     </div>
   </header>
 
   <script src="js/libs/jquery.js"></script>
 </body>
 </html>
+

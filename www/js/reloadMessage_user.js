@@ -3,6 +3,7 @@ var materielMessage_checkCount = 0;
 var maladeMessage_checkCount = 0;
 var mainoeuvreMessage_checkCount = 0;
 var milieuMessage_checkCount = 0;
+var cptError = 0;
 function reloadMessage()
 {
   $(document).ready(function(){
@@ -79,13 +80,17 @@ function reloadMessage()
                   }
                 }
               }
+            }else{
+              cptError++;
             }
-            console.log(page5Advancement);
             if (page5Advancement[0] == true && page5Advancement[1] == true && page5Advancement[2] == true && page5Advancement[3] == true && page5Advancement[4] == true)
             {
               //redirection
               var root = "localhost";
-              $(location).attr('href',"http://"+root+"/IFSI/www/finalPage_win.php");
+              localStorage.setItem("page5_time", localStorage.getItem("time"));
+              localStorage.setItem("page5_error", cptError);
+              dataSend(root, "finalPage_win");
+              //$(location).attr('href',"http://"+root+"/IFSI/www/finalPage_win.php");
             }
           }
         }

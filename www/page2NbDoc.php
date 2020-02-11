@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('module/config.php');
+$_SESSION['nameTeam'] = 'data';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -38,7 +39,7 @@ require_once('module/config.php');
   <script src="js/sideBarre.js"></script>
   <script src="js/countdown.js"></script>
   <script>
-    sideBarre_change("90%");
+    sideBarre_change("74%");
     nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
   </script>
 </body>

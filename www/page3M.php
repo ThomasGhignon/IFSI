@@ -40,14 +40,15 @@ require_once('module/config.php');
     </div>
   </header>
   <script src="js/libs/jquery.js"></script>
+  <script src="js/countdown.js"></script>
   <script src="js/page3MVerif.js"></script>
   <script src="js/error.js"></script>
   <script src="js/unitary_check.js"></script>
   <script src="js/sideBarre.js"></script>
-  <script src="js/countdown.js"></script>
   <script>
-    sideBarre_change("70%");
+    sideBarre_change("55%");
     M_verif("<?php echo($ipLocal); ?>");
+    console.log(localStorage['page2_time']);
   </script>
 </body>
 </html>

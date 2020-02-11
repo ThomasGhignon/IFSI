@@ -158,13 +158,14 @@ require_once('module/init.php');
   <script src="js/page5Send.js"></script>
   <script src="js/loadMessage.js"></script>
   <script src="js/reloadMessage_user.js"></script>
+  <script src="js/dataResultSend.js"></script>
 
   <script src="js/removeNotif.js"></script>
   <script src="js/sideBarre.js"></script>
   <script src="js/countdown.js"></script>
   <!-- js script -->
   <script>
-    sideBarre_change("10%");
+    sideBarre_change("17%");
   </script>
 </body>
 </html>

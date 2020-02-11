@@ -1,6 +1,7 @@
 function M_step2Verif(root)
 {
   $(document).ready(function(){
+    console.log(localStorage);
     $('.main').submit(function(event){
       event.preventDefault();
       var typeM_Array = [];
@@ -138,10 +139,15 @@ function refreshView(array, root)
   }
   if (cpt == 0)
   {
+    localStorage.setItem("page4_time", localStorage.getItem("time"));
     $(location).attr('href',"http://"+root+"/IFSI/www/page5Preco.php");
   }
   else
   {
     showError("vous avez "+cpt+" erreur(s)", "red");
+
+    var nbError = localStorage.getItem("page3_error");
+    nbError = nbError+missingWord_cpt;
+    localStorage.setItem("page3_error", nbError);
   }
 }

@@ -102,7 +102,7 @@ require_once('module/config.php');
   <script src="js/sideBarre.js"></script>
   <script src="js/countdown.js"></script>
   <script>
-    sideBarre_change("30%");
+    sideBarre_change("36%");
     M_step2Verif("<?php echo($ipLocal); ?>");
   </script>
 </body>

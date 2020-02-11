@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once('module/config.php');
+require_once('module/init.php');
+$request = $bdd->query('DELETE FROM `preco_message`');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,7 +22,7 @@ require_once('module/config.php');
   <header>
     <div class="connectionAdmin">
       <img src="img/settings.svg" alt="parametre">
-      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/connectionAdmin.php">Admin</a>
+      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/Admin.php">Admin</a>
     </div>
     <div class="wrap">
       <div class="errorMessage_container"></div>
@@ -30,9 +32,8 @@ require_once('module/config.php');
       </div>
       <div class="main">
         <p>Entrez le nom de votre service :</p>
-        <!-- http://localhost/IFSI/www/page2NbDoc.php -->
-        <form class="main" action="">
-          <input class="input" type="text" placeholder="ex : Equipe 51">
+        <form class="main" action="" method="POST">
+          <input class="input" name="sessionName" type="text" placeholder="ex : Equipe 51">
           <input type="submit" value="Commencer">
         </form>
       </div>
@@ -42,7 +43,7 @@ require_once('module/config.php');
   <script src="js/error.js"></script>
   <script src="js/start.js"></script>
   <script>
-    start_verif("<?php echo($ipLocal); ?>","page2NbDoc");
+    start_verif("<?php echo($ipLocal); ?>");
   </script>
 </body>
 </html>

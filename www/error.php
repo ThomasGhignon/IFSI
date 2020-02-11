@@ -1,5 +1,5 @@
 <?php
-require_once('module/init.php');
+require_once('module/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,7 +8,7 @@ require_once('module/init.php');
   <meta name="viewport" content="width=device-width"/>
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
   <meta name="author" content="Thomas Ghignon">
-  <title>Perdu !!!</title>
+  <title>ERREUR</title>
 
   <link rel="stylesheet" href="css/libs/cssReset.css">
   <link rel="stylesheet" href="css/style_global.css">
@@ -18,7 +18,8 @@ require_once('module/init.php');
 
   <header>
     <div class="wrap">
-      <h1>Perdu !!!</h1>
+      <h1>ERREUR</h1>
+      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/index.php">Page d'accueil</a>
     </div>
   </header>
 
