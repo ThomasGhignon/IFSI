@@ -1,7 +1,7 @@
+var nbError = localStorage.getItem("page4_error");
 function M_step2Verif(root)
 {
   $(document).ready(function(){
-    console.log(localStorage);
     $('.main').submit(function(event){
       event.preventDefault();
       var typeM_Array = [];
@@ -118,7 +118,6 @@ function checkData(data, userArray, root)
 
 function refreshView(array, root)
 {
-  console.log(array);
   var cpt = 0;
   for (var i = 0; i < 5; i++)
   {
@@ -140,14 +139,19 @@ function refreshView(array, root)
   if (cpt == 0)
   {
     localStorage.setItem("page4_time", localStorage.getItem("time"));
+    if (nbError)
+    {
+      localStorage.setItem("page4_error", nbError);
+    }
+    else
+    {
+      localStorage.setItem("page4_error", "0");
+    }
     $(location).attr('href',"http://"+root+"/IFSI/www/page5Preco.php");
   }
   else
   {
     showError("vous avez "+cpt+" erreur(s)", "red");
-
-    var nbError = localStorage.getItem("page3_error");
-    nbError = nbError+cpt;
-    localStorage.setItem("page3_error", nbError);
+    nbError++;
   }
 }

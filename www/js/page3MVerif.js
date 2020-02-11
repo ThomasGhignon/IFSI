@@ -1,5 +1,4 @@
 var nbError = localStorage.getItem("page3_error");
-console.log(nbError);
 function M_verif(root)
 {
   $(document).ready(function(){
@@ -135,7 +134,7 @@ function M_verif(root)
           showError('mots synonymes', "orange");
 
         }
-        nbError = nbError+missingWord_cpt;
+        nbError++;
       }
     });
   });

@@ -49,11 +49,6 @@ h1
   display: flex;
 }
 
-.resultData span>*
-{
-  /* margin: 0 5px 0 5px; */
-}
-
 .resultData span>p, .resultData span>span
 {
   color: #EA2027;

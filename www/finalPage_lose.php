@@ -1,6 +1,7 @@
 <?php
 require_once('module/init.php');
-?>
+require_once('module/config.php');
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,6 +20,7 @@ require_once('module/init.php');
   <header>
     <div class="wrap">
       <h1>Perdu !!!</h1>
+      <?php include 'module/dataResultOverview.php' ?>
     </div>
   </header>
 

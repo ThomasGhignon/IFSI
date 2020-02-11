@@ -27,4 +27,3 @@ require_once('module/config.php');
   <script src="js/libs/jquery.js"></script>
 </body>
 </html>
-

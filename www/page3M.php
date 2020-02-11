@@ -20,7 +20,6 @@ require_once('module/config.php');
     <div class="wrap">
       <?php include 'module/sideBarreInclude.php'; ?>
       <div class="errorMessage_container"></div>
-      <!-- http://localhost/IFSI/www/page4MBis.php -->
       <form class="main" action="">
         <div class="content">
           <p>Entrez les noms des cinq branches du diagramme d'Ishikawa : <br>( Pas de majuscule et n'oubliez pas les accents )</p>
