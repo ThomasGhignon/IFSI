@@ -1,7 +1,5 @@
 <?php
-session_start();
 require_once('module/config.php');
-$_SESSION['nameTeam'] = 'data';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,7 +22,7 @@ $_SESSION['nameTeam'] = 'data';
       <!-- http://localhost/IFSI/www/page3M.php -->
       <form class="main" action="path">
         <div class="content" value="path">
-          <p>Entrez le code à 6 chiffres trouvé sur l'un des documents :</p>
+          <p>Entrez le code à 6 chiffres, caché dans un coffre :</p>
           <input class="input" type="text" placeholder="ex : 000000">
         </div>
         <div class="button">
@@ -34,6 +32,7 @@ $_SESSION['nameTeam'] = 'data';
     </div>
   </header>
   <script src="js/libs/jquery.js"></script>
+  <script src="js/ajaxPostProgress.js"></script>
   <script src="js/error.js"></script>
   <script src="js/nbVerif.js"></script>
   <script src="js/sideBarre.js"></script>
@@ -42,7 +41,6 @@ $_SESSION['nameTeam'] = 'data';
   <script>
     sideBarre_change("74%");
     nb_verif("<?php echo($ipLocal); ?>", "page3M", "<?php echo($numPage2); ?>");
-    console.log(localStorage);
   </script>
 </body>
 </html>

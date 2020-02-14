@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('module/config.php');
 require_once('module/init.php');
 ?>
@@ -155,6 +154,8 @@ require_once('module/init.php');
   <!-- js script -->
   <script src="js/initFlickity.js"></script>
 
+  <script src="js/ajaxPostProgress.js"></script>
+
   <script src="js/page5Send.js"></script>
   <script src="js/loadMessage.js"></script>
   <script src="js/reloadMessage_user.js"></script>
@@ -166,7 +167,6 @@ require_once('module/init.php');
   <!-- js script -->
   <script>
     sideBarre_change("17%");
-    console.log(localStorage);
   </script>
 </body>
 </html>

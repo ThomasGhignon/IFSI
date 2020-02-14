@@ -16,7 +16,7 @@ function countdown(duree)
   {
     //redirection
     var root = "localhost";
-    $(location).attr('href',"http://"+root+"/IFSI/www/finalPage_lose.php");
+    dataSend(root, "finalPage_lose");
   }
   else
   {

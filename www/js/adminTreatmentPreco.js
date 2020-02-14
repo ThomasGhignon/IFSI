@@ -24,19 +24,6 @@ function ctrl_adminTreatment()
 }
 ctrl_adminTreatment();
 
-
-/*Ne fonctionne pas : sert à enlever les input de selection admin qui se remette automatiquement au refresh de la page et qui peuvent engendrer des bugs*/
-/*function loadOldStatus()
-{
-  $(document).ready(function(){
-    $("messageContainer .incomplete").siblings(':first>input').not('input_incomplete').remove();
-    $("messageContainer .validated").parent().not(".input_validated").remove();
-    $("messageContainer .declined").parent().not(".input_declined").remove();
-  });
-}
-loadOldStatus();*/
-
-
 function view_adminTreatment(status, allStatus, inputClass, inputVal, input)
 {
   $("#"+inputVal).addClass(status);
@@ -52,11 +39,3 @@ function updateClassMessage(id, status, typeM)
       type : "GET",
   });
 }
-
-/*function updateClassMessage(id, status, typeM)
-{
-  $.ajax({
-      url : "module/updateClassMessage.php?id="+id+"&stat="+status+"&typeM="+typeM+"&typeEven=page5_status",
-      type : "POST",
-  });
-}*/

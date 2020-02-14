@@ -17,7 +17,7 @@ $passwordBdd = ''; /*Mot de passe de la base de donnée, laisser vide si aucun m
 
 /*Configuration générale de la partie*/
 
-$timestamp = ""; /*temps de jeu (en seconde)*/
+$timestamp = "3600"; /*temps de jeu (en seconde)*/
 
 /*Configuration générale de la partie*/
 

@@ -20,7 +20,7 @@ require_once('module/config.php');
   <header>
     <div class="wrap">
       <h1>Perdu !!!</h1>
-      <?php include 'module/dataResultOverview.php' ?>
+      <?php //include 'module/dataResultOverview.php' ?>
     </div>
   </header>
 

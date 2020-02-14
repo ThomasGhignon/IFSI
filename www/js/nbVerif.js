@@ -1,6 +1,7 @@
 function nb_verif(root, path, code)
 {
   $(document).ready(function(){
+    /*var progress_countdown = ""*/
     $(".main").submit(function(event){
       event.preventDefault();
       var inputData = $("input").val();
@@ -8,7 +9,8 @@ function nb_verif(root, path, code)
       {
         localStorage.setItem("page2_time", localStorage.getItem("time"));
         //redirection
-        $(location).attr('href',"http://"+root+"/IFSI/www/"+path+".php");
+        var getTime = localStorage.getItem("page2_time");
+        progressGame(getTime, "55", root, path);
       }
       else
       {

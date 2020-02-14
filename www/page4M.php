@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('module/config.php');
 ?>
 <!DOCTYPE html>
@@ -95,6 +94,7 @@ require_once('module/config.php');
     </div>
   </header>
   <script src="js/libs/jquery.js"></script>
+  <script src="js/ajaxPostProgress.js"></script>
   <script src="js/page4MVerif.js"></script>
   <script src="js/error.js"></script>
   <script src="js/unitary_check.js"></script>
@@ -105,7 +105,6 @@ require_once('module/config.php');
   <script>
     sideBarre_change("36%");
     M_step2Verif("<?php echo($ipLocal); ?>");
-    console.log(localStorage);
   </script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('module/config.php');
 ?>
 <!DOCTYPE html>
@@ -39,6 +38,7 @@ require_once('module/config.php');
     </div>
   </header>
   <script src="js/libs/jquery.js"></script>
+  <script src="js/ajaxPostProgress.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/page3MVerif.js"></script>
   <script src="js/error.js"></script>
@@ -47,8 +47,7 @@ require_once('module/config.php');
   <script src="js/sideBarre.js"></script>
   <script>
     sideBarre_change("55%");
-    M_verif("<?php echo($ipLocal); ?>");
-    console.log(localStorage);
+    M_verif("<?php echo($ipLocal); ?>", "page4M");
   </script>
 </body>
 </html>

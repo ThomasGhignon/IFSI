@@ -1,7 +1,6 @@
 function start_verif(root)
 {
   $(document).ready(function(){
-    console.log(localStorage);
     $(".main").submit(function(event){
       event.preventDefault();
       var inputData = $("input").val();
@@ -12,7 +11,7 @@ function start_verif(root)
       }
       else
       {
-        localStorage.setItem("time","3600");
+        //localStorage.setItem("time","3600");
         localStorage.setItem("sessionName", inputData);
         localStorage.setItem("page2_time", "");
         localStorage.setItem("page2_error", "0");
@@ -23,7 +22,7 @@ function start_verif(root)
         localStorage.setItem("page5_time", "");
         localStorage.setItem("page5_error", "0");
         //redirection
-        $(location).attr('href',"http://"+root+"/IFSI/www/page2NbDoc.php");
+        $(location).attr('href',"http://"+root+"/IFSI/www/brief.php");
       }
     });
   });

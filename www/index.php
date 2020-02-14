@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('module/config.php');
 require_once('module/init.php');
 $request = $bdd->query('DELETE FROM `preco_message`');

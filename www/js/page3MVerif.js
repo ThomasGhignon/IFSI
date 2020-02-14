@@ -1,5 +1,5 @@
 var nbError = localStorage.getItem("page3_error");
-function M_verif(root)
+function M_verif(root, path)
 {
   $(document).ready(function(){
     $(".main").submit(function(event){
@@ -117,7 +117,9 @@ function M_verif(root)
         {
           localStorage.setItem("page3_error", "0");
         }
-        $(location).attr('href',"http://"+root+"/IFSI/www/page4M.php");
+        //$(location).attr('href',"http://"+root+"/IFSI/www/page4M.php");
+        var getTime = localStorage.getItem("page3_time");
+        progressGame(getTime, "36", root, path);
       }
       else
       {

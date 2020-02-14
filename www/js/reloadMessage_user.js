@@ -89,7 +89,7 @@ function reloadMessage()
               var root = "localhost";
               localStorage.setItem("page5_time", localStorage.getItem("time"));
               localStorage.setItem("page5_error", cptError);
-              dataSend(root, "finalPage_win");
+              dataSend(root, "debrief.php");
             }
           }
         }
