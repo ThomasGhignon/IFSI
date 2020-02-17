@@ -21,6 +21,11 @@ require_once('module/config.php');
     <div class="wrap">
       <h1>Gagné !!!</h1>
       <?php include 'module/dataResultOverview.php' ?>
+      <div class="linkRestart">
+        <div>
+          <a href="http://<?php echo($ipLocal); ?>/ifsi/www/">Rejouer</a>
+        </div>
+      </div>
     </div>
   </header>
 

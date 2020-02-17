@@ -18,7 +18,6 @@ function initFlickity()
       var index = $(this).index();
       $carousel.flickity( 'select', index);
       $('.typeM>p').text($(this).text());
-      console.log(page5Advancement[index], index);
       if (page5Advancement[index] == true)
       {
         $('.validatedMessage').addClass("validatedMessage_show").removeClass("validatedMessage_hide");

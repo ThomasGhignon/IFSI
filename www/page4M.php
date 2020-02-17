@@ -99,7 +99,6 @@ require_once('module/config.php');
   <script src="js/page4MVerif.js"></script>
   <script src="js/error.js"></script>
   <script src="js/unitary_check.js"></script>
-  <script src="js/testSelect.js"></script>
   <script src="js/sideBarre.js"></script>
   <script src="js/dataResultSend.js"></script>
   <script src="js/countdown.js"></script>

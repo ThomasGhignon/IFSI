@@ -80,9 +80,4 @@ while($resultData = $request->fetch()){
       </span>
     </div>
   </div>
-  <div class="linkRestart">
-    <div>
-      <a href="http://<?php echo($ipLocal); ?>/ifsi/www/">Rejouer</a>
-    </div>
-  </div>
 </div>
