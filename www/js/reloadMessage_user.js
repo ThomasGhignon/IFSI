@@ -20,7 +20,6 @@ function reloadMessage(root)
             var parentId = $("#"+data.id).parent().attr("id");
             $("#"+data.id).addClass(data.className);
             $("#"+data.id).removeClass(oldClass);
-            console.log(data.className);
             if($(".button_"+data.typeM).hasClass("flickiButton-select")){
 
             }

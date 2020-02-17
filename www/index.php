@@ -1,8 +1,8 @@
 <?php
 require_once('module/config.php');
 require_once('module/init.php');
-$request = $bdd->query('DELETE FROM `preco_message`');
-$request = $bdd->query('DELETE FROM `time_update`');
+$request = $bdd->query('DELETE FROM `preco_message`; ALTER TABLE `preco_message` AUTO_INCREMENT=0');
+$request = $bdd->query('DELETE FROM `time_update`; ALTER TABLE `time_update` AUTO_INCREMENT=0');
 ?>
 <!DOCTYPE html>
 <html lang="fr">

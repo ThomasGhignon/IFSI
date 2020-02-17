@@ -20,7 +20,11 @@ require_once('module/config.php');
   <header>
     <div class="wrap">
       <h1>Perdu !!!</h1>
-      <?php include 'module/dataResultOverview.php' ?>
+      <div class="linkRestart">
+        <div>
+          <a href="http://<?php echo($ipLocal); ?>/ifsi/www/">Rejouer</a>
+        </div>
+      </div>
     </div>
   </header>
 
