@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once('module/config.php');
 require_once('module/init.php');
 ?>
@@ -97,11 +96,9 @@ require_once('module/init.php');
   <script src="js/sideBarre.js"></script>
   <script src="js/adminTreatmentPreco.js"></script>
   <script src="js/removeNotif.js"></script>
-  <!-- <script src="js/countdown.js"></script> -->
+  <script src="js/adminCountdown.js"></script>
+  <script src="js/adminProgressView.js"></script>
   <!-- js script -->
-  <script>
-    sideBarre_change("10%");
-  </script>
 </body>
 </html>
 

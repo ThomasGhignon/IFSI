@@ -2,6 +2,7 @@
 require_once('module/config.php');
 require_once('module/init.php');
 $request = $bdd->query('DELETE FROM `preco_message`');
+$request = $bdd->query('DELETE FROM `time_update`');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,7 +22,7 @@ $request = $bdd->query('DELETE FROM `preco_message`');
   <header>
     <div class="connectionAdmin">
       <img src="img/settings.svg" alt="parametre">
-      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/Admin.php">Admin</a>
+      <a href="http://<?php echo($ipLocal); ?>/IFSI/www/admin.php">Admin</a>
     </div>
     <div class="wrap">
       <div class="errorMessage_container"></div>

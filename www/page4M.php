@@ -89,6 +89,7 @@ require_once('module/config.php');
         </div>
         <div class="button">
           <input type="submit" value="Envoyer">
+          <span>* N'hésitez pas à vérifier plusieurs fois en appuyant sur le bouton.</span>
         </div>
       </form>
     </div>
@@ -104,7 +105,7 @@ require_once('module/config.php');
   <script src="js/countdown.js"></script>
   <script>
     sideBarre_change("36%");
-    M_step2Verif("<?php echo($ipLocal); ?>");
+    M_step2Verif("<?php echo($ipLocal); ?>", "page5Preco");
   </script>
 </body>
 </html>

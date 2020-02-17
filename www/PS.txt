@@ -1,16 +1,8 @@
-° A demander :
-
-Titre de chaque page
-
 ° A faire :
 
 -Clear tout les scripts
 
-° Si il reste du temps :
-
--fixer la page 5 m : mettre que matière plus malade donc enlever message orange qui provoque un petit bug.
-
-
--faire toute les root
 
 -stat perdu ou bouton
+
+METTRE BDD

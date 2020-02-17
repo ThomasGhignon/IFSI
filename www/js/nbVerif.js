@@ -1,7 +1,6 @@
 function nb_verif(root, path, code)
 {
   $(document).ready(function(){
-    /*var progress_countdown = ""*/
     $(".main").submit(function(event){
       event.preventDefault();
       var inputData = $("input").val();

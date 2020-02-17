@@ -127,7 +127,8 @@ require_once('module/init.php');
       </div>
     </div>
     <div class="advancement">
-      <span><span class="advancement_stat">0</span> / <span class="advancement_goal">4</span></span>
+      <span class="validatedMessage validatedMessage_hide">Validé</span>
+      <span class="statContainer"><span class="advancement_stat">0</span> / <span class="advancement_goal">4</span></span>
     </div>
     <div class="legend">
       <span>Validé</span>
@@ -154,8 +155,6 @@ require_once('module/init.php');
   <!-- js script -->
   <script src="js/initFlickity.js"></script>
 
-  <script src="js/ajaxPostProgress.js"></script>
-
   <script src="js/page5Send.js"></script>
   <script src="js/loadMessage.js"></script>
   <script src="js/reloadMessage_user.js"></script>
@@ -167,6 +166,7 @@ require_once('module/init.php');
   <!-- js script -->
   <script>
     sideBarre_change("17%");
+    reloadMessage("<?php echo($ipLocal); ?>");
   </script>
 </body>
 </html>

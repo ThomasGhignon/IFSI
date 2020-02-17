@@ -4,7 +4,8 @@ var maladeMessage_checkCount = 0;
 var mainoeuvreMessage_checkCount = 0;
 var milieuMessage_checkCount = 0;
 var cptError = 0;
-function reloadMessage()
+
+function reloadMessage(root)
 {
   $(document).ready(function(){
     setTimeout( function(){
@@ -86,16 +87,14 @@ function reloadMessage()
             if (page5Advancement[0] == true && page5Advancement[1] == true && page5Advancement[2] == true && page5Advancement[3] == true && page5Advancement[4] == true)
             {
               //redirection
-              var root = "localhost";
               localStorage.setItem("page5_time", localStorage.getItem("time"));
               localStorage.setItem("page5_error", cptError);
-              dataSend(root, "debrief.php");
+              dataSend(root, "debrief");
             }
           }
         }
       });
-      reloadMessage();
+      reloadMessage(root);
     }, 4000);
   });
 }
-reloadMessage();

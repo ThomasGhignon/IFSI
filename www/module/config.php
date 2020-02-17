@@ -1,7 +1,7 @@
 <?php
 /*Configuration Administrateur*/
 
-$ipLocal = "localhost"; /*Ceci est l'ip du serveur local (là où est stocké le fichier www), pour y accèder écrire "ipconfig" dans l'invite de commande et récupérer l'ipV4*/
+$ipLocal = "localhost"; /*Ceci est l'ip du serveur local (là où est stocké le fichier www), pour y accèder écrire "ipconfig" dans l'invite de commande et récupérer l'ipV4. (Doit aussi être changée dans countdown.js).*/
 
 $passwordAdmin = "603vXBk"; /*Mot de passe adminitrateur*/
 

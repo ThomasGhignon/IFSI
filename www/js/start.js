@@ -11,7 +11,6 @@ function start_verif(root)
       }
       else
       {
-        //localStorage.setItem("time","3600");
         localStorage.setItem("sessionName", inputData);
         localStorage.setItem("page2_time", "");
         localStorage.setItem("page2_error", "0");

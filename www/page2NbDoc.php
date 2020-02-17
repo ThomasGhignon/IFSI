@@ -19,8 +19,7 @@ require_once('module/config.php');
     <div class="wrap">
       <?php include 'module/sideBarreInclude.php'; ?>
       <div class="errorMessage_container"></div>
-      <!-- http://localhost/IFSI/www/page3M.php -->
-      <form class="main" action="path">
+      <form class="main" action="">
         <div class="content" value="path">
           <p>Entrez le code à 6 chiffres, caché dans un coffre :</p>
           <input class="input" type="text" placeholder="ex : 000000">

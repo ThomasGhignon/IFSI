@@ -1,6 +1,5 @@
-function sideBarre_change(progress/*, old*/)
+function sideBarre_change(progress)
 {
-  //$('.hiddenBarre').css("height", old);
   $(document).ready(function(){
     $('.hiddenBarre').animate({height: progress}, "slow");
   });

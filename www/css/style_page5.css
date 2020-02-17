@@ -524,6 +524,16 @@ p
   font-size: 20px;
 }
 
+.validatedMessage_show
+{
+  display: flex;
+}
+
+.validatedMessage_hide
+{
+  display: none;
+}
+
 .legend
 {
   width: 80%;

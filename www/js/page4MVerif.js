@@ -1,5 +1,6 @@
 var nbError = localStorage.getItem("page4_error");
-function M_step2Verif(root)
+
+function M_step2Verif(root, path)
 {
   $(document).ready(function(){
     $('.main').submit(function(event){
@@ -47,14 +48,14 @@ function M_step2Verif(root)
       typeM_Array[3] = array_mainoeuvre;
       typeM_Array[4] = array_milieu;
 
-      retrieveArrayOrigin(typeM_Array, root);
+      retrieveArrayOrigin(typeM_Array, root, path);
     });
   });
 }
 /*M_step2Verif("localhost");*/
 
 /*récupération bonnes données (pour le moment pas stocké dans une base)*/
-function retrieveArrayOrigin(userArray, root)
+function retrieveArrayOrigin(userArray, root, path)
 {
   $.ajax({
     url : "module/page4Check.php",
@@ -63,14 +64,14 @@ function retrieveArrayOrigin(userArray, root)
       if (jsonArray != "")
       {
         var dataOrigin = JSON.parse(jsonArray);
-        checkData(dataOrigin, userArray, root);
+        checkData(dataOrigin, userArray, root, path);
       }
     }
   });
 }
 
 /*comparatif des tableau origin et user*/
-function checkData(data, userArray, root)
+function checkData(data, userArray, root, path)
 {
   var assetArray = [[],[],[],[],[]];
   for (var i = 0; i < 5; i++)
@@ -113,10 +114,10 @@ function checkData(data, userArray, root)
       }
     }
   }
-  refreshView(assetArray, root);
+  refreshView(assetArray, root, path);
 }
 
-function refreshView(array, root)
+function refreshView(array, root, path)
 {
   var cpt = 0;
   for (var i = 0; i < 5; i++)
@@ -147,7 +148,8 @@ function refreshView(array, root)
     {
       localStorage.setItem("page4_error", "0");
     }
-    $(location).attr('href',"http://"+root+"/IFSI/www/page5Preco.php");
+    var getTime = localStorage.getItem("page4_time");
+    progressGame(getTime, "17", root, path);
   }
   else
   {
